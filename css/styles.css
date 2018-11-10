@@ -110,8 +110,8 @@ td.thatext a { color:#666666; }
 		}
 		.fa {
   			padding: 8px;
-  			font-size: 12pt;
-  			width: 35px;
+  			font-size: 11pt;
+  			width: 20px;
   			text-align: center;
   			text-decoration: none;
   			margin: 5px 2px;
@@ -173,11 +173,26 @@ td.thatext a { color:#666666; }
   			color: #ffffff;
 		}
 		
-		.item{ border-bottom:1px solid #dfdfdf; padding: 5px; margin: 5px;}
+		.item{ 
+			border-bottom:1px solid #dfdfdf; 
+			margin-top: 10px;
+			margin-bottom: 15px; 
+			padding-bottom: 15px;
+		}
+		.item ul {
+				display: block;
+				list-style-type: disc;
+				margin-top: 1em;
+				margin-bottom: 1 em;
+				margin-left: 0;
+				margin-right: 0;
+				padding-left: 40px;
+    				font-size: 12px;
+		}
 		.item h4{ 
 			float:right; 
-			margin:5px;
-			padding:5px; 
+			margin:10px; 
+			padding:2px 10px; 
 			background-color:#eee; 
 			color:#333; 
 			font-size:11px; 
@@ -188,12 +203,11 @@ td.thatext a { color:#666666; }
 				
 		.item h2{ 
 			color:#06A; 
-			margin: 5px;
-			padding: 5px;
 			font-family:Georgia, serif; 
 			font-size:16px; 
 			font-weight:400; 
 			letter-spacing:-1px; 
+			padding: 10px;
 		}
 		.item h2 a{ color:#06A; text-decoration:none; }
 				
@@ -209,7 +223,7 @@ td.thatext a { color:#666666; }
 footer {
 	padding-top: 9rem;
 	padding-bottom: 3rem;
-	font-size: 1.5rem;
+	font-size: 1em;
 	color: #8E8E8E;
 }
 footer a,
@@ -277,7 +291,7 @@ footer ul li {
 
 .footer-main .footer-subscribe .subscribe-form .subscribe-message {
 	font-family: "roboto-bold", sans-serif;
-	font-size: 1.4rem;
+	font-size: 1em;
 	color: #000000;
 }
 
@@ -501,4 +515,556 @@ footer ul li {
 	}
 
 }
+/* ===================================================================
+ *  03. grid - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+.row {
+	width: 94%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+[class*="col-"],
+.bgrid {
+	float: left;
+}
+
+[class*="col-"] + [class*="col-"].end {
+	float: right;
+}
+
+[class*="col-"] {
+	padding: 0 20px;
+}
+
+.col-one {
+	width: 8.33333%;
+}
+
+.col-two,
+.col-1-6 {
+	width: 16.66667%;
+}
+
+.col-three,
+.col-1-4 {
+	width: 25%;
+}
+
+.col-four,
+.col-1-3 {
+	width: 33.33333%;
+}
+
+.col-five {
+	width: 41.66667%;
+}
+
+.col-six,
+.col-1-2 {
+	width: 50%;
+}
+
+.col-seven {
+	width: 58.33333%;
+}
+
+.col-eight,
+.col-2-3 {
+	width: 66.66667%;
+}
+
+.col-nine,
+.col-3-4 {
+	width: 75%;
+}
+
+.col-ten,
+.col-5-6 {
+	width: 83.33333%;
+}
+
+.col-eleven {
+	width: 91.66667%;
+}
+
+.col-twelve,
+.col-full {
+	width: 100%;
+}
+
+/* ---------------------------------------------------------------
+ * small screens - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:1024px) {
+	.row .row {
+		margin-left: -18px;
+		margin-right: -18px;
+	}
+
+	[class*="col-"] {
+		padding: 0 18px;
+	}
+
+}
+
+/* --------------------------------------------------------------- 
+ * tablets - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+	.row {
+		width: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	[class*="col-"] {
+		padding: 0 15px;
+	}
+
+	.tab-1-4 {
+		width: 25%;
+	}
+
+	.tab-1-3 {
+		width: 33.33333%;
+	}
+
+	.tab-1-2 {
+		width: 50%;
+	}
+
+	.tab-2-3 {
+		width: 66.66667%;
+	}
+
+	.tab-3-4 {
+		width: 75%;
+	}
+
+	.tab-full {
+		width: 100%;
+	}
+
+}
+
+/* --------------------------------------------------------------- 
+ * large mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.row {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.row .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	[class*="col-"] {
+		padding: 0 10px;
+	}
+
+	.mob-1-4 {
+		width: 25%;
+	}
+
+	.mob-1-2 {
+		width: 50%;
+	}
+
+	.mob-3-4 {
+		width: 75%;
+	}
+
+	.mob-full {
+		width: 100%;
+	}
+
+}
+
+/* --------------------------------------------------------------- 
+ * small mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	[class*="col-"] {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+
+	[class*="col-"] + [class*="col-"].end {
+		float: none;
+	}
+
+}
+
+ 
+/* ===================================================================
+ *  04. block grids - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+[class*="block-"]:before,
+[class*="block-"]:after {
+	content: "";
+	display: table;
+}
+
+[class*="block-"]:after {
+	clear: both;
+}
+
+.block-1-6 .bgrid {
+	width: 16.66667%;
+}
+
+.block-1-4 .bgrid {
+	width: 25%;
+}
+
+.block-1-3 .bgrid {
+	width: 33.33333%;
+}
+
+.block-1-2 .bgrid {
+	width: 50%;
+}
+
+/**
+ * Clearing for block grid columns. Allow columns with 
+ * different heights to align properly.
+ */
+.block-1-6 .bgrid:nth-child(6n+1),
+.block-1-4 .bgrid:nth-child(4n+1),
+.block-1-3 .bgrid:nth-child(3n+1),
+.block-1-2 .bgrid:nth-child(2n+1) {
+	clear: both;
+}
+
+/* ---------------------------------------------------------------
+ * small screens - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:1024px) {
+	.block-s-1-6 .bgrid {
+		width: 16.66667%;
+	}
+
+	.block-s-1-4 .bgrid {
+		width: 25%;
+	}
+
+	.block-s-1-3 .bgrid {
+		width: 33.33333%;
+	}
+
+	.block-s-1-2 .bgrid {
+		width: 50%;
+	}
+
+	.block-s-full .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="block-s-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.block-s-1-6 .bgrid:nth-child(6n+1),
+	.block-s-1-4 .bgrid:nth-child(4n+1),
+	.block-s-1-3 .bgrid:nth-child(3n+1),
+	.block-s-1-2 .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
+/* ---------------------------------------------------------------
+ * tablets - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+	.block-tab-1-6 .bgrid {
+		width: 16.66667%;
+	}
+
+	.block-tab-1-4 .bgrid {
+		width: 25%;
+	}
+
+	.block-tab-1-3 .bgrid {
+		width: 33.33333%;
+	}
+
+	.block-tab-1-2 .bgrid {
+		width: 50%;
+	}
+
+	.block-tab-full .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="block-tab-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.block-tab-1-6 .bgrid:nth-child(6n+1),
+	.block-tab-1-4 .bgrid:nth-child(4n+1),
+	.block-tab-1-3 .bgrid:nth-child(3n+1),
+	.block-tab-1-2 .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
+/* ---------------------------------------------------------------
+ * large mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.block-mob-1-6 .bgrid {
+		width: 16.66667%;
+	}
+
+	.block-mob-1-4 .bgrid {
+		width: 25%;
+	}
+
+	.block-mob-1-3 .bgrid {
+		width: 33.33333%;
+	}
+
+	.block-mob-1-2 .bgrid {
+		width: 50%;
+	}
+
+	.block-mob-full .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="block-mob-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.block-mob-1-6 .bgrid:nth-child(6n+1),
+	.block-mob-1-4 .bgrid:nth-child(4n+1),
+	.block-mob-1-3 .bgrid:nth-child(3n+1),
+	.block-mob-1-2 .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
+/* ---------------------------------------------------------------
+ * stack on small mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.stack .bgrid {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+ 
+/* ===================================================================
+ *  05. MISC  - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+/**
+ * Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+/**
+ * Misc Helper Styles 
+ */
+.hide {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.hide-content {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.remove-bottom {
+	margin-bottom: 0;
+}
+
+.half-bottom {
+	margin-bottom: 1.5rem !important;
+}
+
+.add-bottom {
+	margin-bottom: 3rem !important;
+}
+
+.tall-bottom {
+	margin-bottom: 4.5rem !important;
+}
+
+.no-border {
+	border: none;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+	.full-width-on-mobile {
+		width: 100%;
+	}
+
+}
+
+			.rightalign {
+  				text-align: right;
+  				vertical-align: top;
+  				margin: 0px;
+  				padding: 0px;
+  				font-weight: bold;
+			}
+			
+			.headertable {
+				font-size: 11pt;
+				padding: 10px;
+				width: 100%; 
+				color:#666666;
+				font-weight: bold;
+			}
+			.dateright {
+				float: right;
+				width: 50%;
+				text-align: right;
+				margin-bottom: 15px;
+				font-size: 11pt;
+				font-weight: bold;
+			}
+			.titleleft {
+				float: left;
+				width: 50%;
+				margin-bottom: 15px;
+				font-size: 11pt;
+				font-weight: bold;
+			}
+			#footerLinks {
+				list-style: none; 
+			}
+			#footerLinks li {
+				display: inline-block;
+				float: left;
+				margin: 20px 0 70px 75px;
+			}
+			#footerLinks li a {
+				text-decoration: none;
+				padding: 7px 15px 7px 15px;
+				background: #eaeaea;
+				color: black;
+				border-left: 1px solid #fff;
+				border-top: 1px solid #fff;
+				border-right: 1px solid #777;
+				border-bottom: 1px solid #777;
+			}
+			#footerLinks li a:hover {
+				text-decoration: none;
+				padding: 7px 15px 7px 15px;
+				background: #eaeaea;
+				color: black;
+				border-left: 1px solid #777;
+				border-top: 1px solid #777;
+				border-right: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+			}
 		
