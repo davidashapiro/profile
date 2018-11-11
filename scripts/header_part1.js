@@ -4,6 +4,11 @@
 					document.write("<table cellpadding='0' cellspacing='0' border='0' width='900' height='100%'>");
 						document.write("<tr height='261'>");
 							document.write("<td style='background:#f5f5f5 url(images/top7.jpg) top left round no-repeat; border-bottom:1px solid #eaeaea;'>");
+								document.write(" <ul id='phoneontop'> ");
+									document.write(" <li><i class='fa fa-phone'></i><a href='#'> +1 949-444-2260</a></li> ");
+									document.write(" <li><i class='fa fa-envelope'></i><a href='mailto:d321973@mail.com'> d321973@mail.com</a></li> ");
+								document.write(" </ul> ");
+								
 								document.write("<table cellpadding='0' cellspacing='0' border='0' width='100%' height='260'>");
 									document.write("<tr height='100%'>");
 										document.write("<td align='right' style='padding:0px 50px 10px 0px;'>");
