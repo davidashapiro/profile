@@ -220,6 +220,21 @@ td.thatext a { color:#666666; }
 			.item > ul, .item > ol > li > ul { font-size: 10pt; font-weight: bold; margin-left:20px; }
 			.myclass { font-size: 12pt; font-weight: bold; text-align: right; margin:10px;  text-decoration: underline;}
 			.item > .fontclass { font-size: 11pt; color: black; margin-left:0px; font-weight: bold; }
+			
+			#phoneontop {
+				list-style-type: none; 
+				position: absolute; 
+				top: 20px; 
+				left: 20px; 
+			}
+			#phoneontop li { 
+				display: inline-block; 
+				color: red;
+			}
+			#phoneontop li a { 
+				color: red; 
+				text-decoration: none;
+			}
 				
 	
 footer {
