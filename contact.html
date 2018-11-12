@@ -9,6 +9,50 @@
 			var topmenu = 2;
 			var rightmenu = 0;
 		</script>
+		<style>
+			form input[type=text]{
+				background-color: #eaeaea;
+				margin-bottom: 10px;
+				height: 30px;
+				border: none;
+			}
+			form textarea{
+				background-color: #eaeaea;
+				border: none;
+			}
+			form input[type=button], input[type=submit], input[type=reset] {
+    				background-color: #4CAF50;
+    				border: none;
+    				color: white;
+    				padding: 16px 32px;
+    				text-decoration: none;
+    				margin: 4px 2px;
+    				cursor: pointer;
+			}
+			.button {
+    				background-color: #eaeaea;
+    				border: none;
+    				color: white;
+    				padding: 15px 32px;
+    				text-align: center;
+    				text-decoration: none;
+    				display: inline-block;
+    				font-size: 16px;
+    				margin: 4px 2px;
+    				cursor: pointer;
+    				-webkit-transition-duration: 0.4s; /* Safari */
+    				transition-duration: 0.4s;
+			}
+
+			.buttonShadow{
+    				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			}
+			.buttonShadow:active {
+  				background-color: #3e8e41;
+  				box-shadow: 0 5px #666;
+  				transform: translateY(4px);
+			}
+		</style>
 	</head>
 	<body>
 		<script language='JavaScript' type='text/javascript' src='scripts/header_part1.js'></script>
@@ -46,10 +90,25 @@
 				</td>
 				<td>
 					<div class="map">
-						<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Wheeling+60090&amp;output=embed">
+						<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=230+old+oak+dr+Wheeling+60090&amp;output=embed">
 						</iframe>
 					</div>
 				</td>
+            		</tr>
+            		<tr>
+            			<td colspan="2">
+					<form role="form" class="register-form">
+						<h2>Contact me <small>get in touch with me by filling form below</small></h2>
+						<hr class="colorgraph">
+                        			<input style="width: 100%; " type="text" name="first_name" id="first_name" placeholder="First Name">
+						<input style="width: 100%; " type="text" name="last_name" id="last_name" placeholder="Last Name">
+						<input style="width: 100%; " type="text" name="email" id="email" placeholder="Email">
+						<textarea rows="8" style="width: 100%; " placeholder="* Your comment here"></textarea>
+						<hr class="colorgraph">
+						<div style="width: 30%; "><a href="csoon.html" class="button buttonShadow">Send Message</a></div>
+						<div style="width: 60%; float: right; ">* Please fill all required form field, thanks!</div>
+					</form>
+            			</td>
             		</tr>
             	</table>
 				

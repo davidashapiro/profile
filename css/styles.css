@@ -2,7 +2,10 @@
 .pageContent { font-size:8pt; color: #666666; font-family:tahoma, Arial; } 
 .pageContent a { font-size:8pt; color: #666666; font-family:tahoma, Arial; } 
 
-body {background-color: #eaeaea;}
+body {
+	background-color: #eaeaea;
+	background-image: linear-gradient(to right, #fdfdfd, #e9e9e9);
+}
 
 input, select, textarea { font-family:Tahoma,Arial; font-size:8pt; }
 
@@ -77,6 +80,30 @@ td.text-header { color:#333333; height:26px; padding-left:20px; font-weight:bold
 td.thatext { font-family:tahoma, arial; font-size:10pt; color:#666666; }
 td.thatext a { color:#666666; }
 
+			#profileContact {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			#profileContact li i {
+				margin:0; 
+				width: 10px; 
+				padding: 5px; 
+				padding-right: 20px; 
+			}
+			.map{
+				position:relative;
+				top: 0px;
+				right:0px;
+				margin-left:30px;
+				margin-bottom:0px;
+			}
+			.map iframe{
+				width:300px;
+				height:300px;
+				border:none;
+			}
+			
 		input.pos_fixed
             	{
                 	position:fixed;
