@@ -1,5 +1,5 @@
-var rightmenuurls = ['', 'objective.html', 'skills.html', 'exp.html', 'edu.html' ];
-var rightmenulabels = ['', 'Objective', 'Skills', 'Expirience', 'Education' ];
+var rightmenuurls = ['', 'intMusic.html', 'intReading.html', 'intSports.html', 'intGames.html' ];
+var rightmenulabels = ['', 'Music', 'Reading', 'Sports', 'Games' ];
 
 document.write("<table cellpadding='0' cellspacing='0' border='0' width='100%' style='border-collapse:collapse;'>");
 	document.write("<tr>");

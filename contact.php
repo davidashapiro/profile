@@ -2,11 +2,12 @@
 	<head>
 		<title>David Shapiro - Contact</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="scripts/modernizr.js"></script>
-		<script src="scripts/pace.min.js"></script>
 		<link href='css/styles.css' rel='stylesheet' type='text/css'>
+		<!-- //////// Favicon ////////  -->
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<script language='Javascript' type='text/javascript'>
-			var topmenu = 2;
+			var topmenu = 4;
 			var rightmenu = 0;
 		</script>
 		<style>
@@ -56,35 +57,6 @@
 			}
 			.error {color: #FF0000;}
 		</style>
-		<script type="text/javascript">                                         
-			/* <![CDATA[ */
-			$(document).ready(function(){ // sends the data filled in the contact form to the php file and shows a message
-				$("#contactmeform").submit(function(){
-					var str = $(this).serialize();
-					$.ajax({
-				   		type: "POST",
-				   		url: "scripts/send.php",
-				   		data: str,
-				   		success: function(msg)
-				   		{
-							$("#formstatus").ajaxComplete(function(event, request, settings){
-								if(msg == 'OK'){ // Message Sent? Show the 'Thank You' message and hide the form
-									result = '<div class="formstatusok">Your message has been sent. Thank you!</div>';
-									$("#fields").hide();
-								}
-								else{
-									result = msg;
-								}
-								$(this).html(result);
-							});
-						}
-				
-				 	});
-					return false;
-				});
-			});
-			/* ]]> */	
-		</script>  
 	</head>
 	<body>
 		<script language='JavaScript' type='text/javascript' src='scripts/header_part1.js'></script>
@@ -138,16 +110,16 @@
   		return $data;
 	}
 ?>
-                <table style="font-weight: bold; font-size: 12pt;">
-            		<tr>
-            			<td valign="top">
-            				<div id="contact">
-						<ul id="profileContact">
-							<li>
+			<table style="font-weight: bold; font-size: 12pt;">
+            	<tr>
+            		<td valign="top">
+            			<div id="contact">
+							<ul id="profileContact">
+								<li>
         							<i class="fa fa-envelope-o"></i>
         							<a href="mailto:d321973@mail.com">d321973@mail.com</a>
       							</li>
-							<li>
+								<li>
         							<i class="fa fa-phone"></i> +1 949-444-2260
       							</li>
       							<li>
@@ -158,41 +130,34 @@
       								<i class="fa fa-male"></i>
       								<a href="http://DavidShapiro.ueuo.com/resume/">My Online Resume</a>
       							</li>
-							<li>
-								<i class="fa fa-file-o"></i>
-								<a target="_blank" href="resume/davidresume2015.docx" target="_blank">Resume in Word format</a>
-							</li>
-						</ul>
-					</div>
-				</td>
-				<td>
-					<div class="map">
-						<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=230+old+oak+dr+Wheeling+60090&amp;output=embed">
-						</iframe>
-					</div>
-				</td>
-            		</tr>
-            		<tr>
-            			<td colspan="2">
-            				<h2><small>Get in touch with me by filling form below</small></h2>
-					<form method="post" id="contactmeform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
-						<fieldset>
-							<legend>Contact me</legend>
-							<hr class="colorgraph">
-                        				<input type="text" name="name" id="name" placeholder="* First and Last Name">
-                        				<span class="error">* <?php echo $nameErr;?>
-							<input type="text" name="email" id="email" placeholder="* Email">
-							<span class="error">* <?php echo $emailErr;?>
-							<textarea rows="8" name="comment" id="comment" placeholder="* Your comment here"></textarea>
-							<hr class="colorgraph">
-							<div style="width: 30%; "><a href="#" class="button buttonShadow" onclick="document.getElementById('contactmeform').submit();">Send Message</a></div>
-							<div style="width: 60%; float: right; ">* Please fill all required form field, thanks!</div>
-						</fieldset>
-					</form>
-            			</td>
-            		</tr>
-            	</table>
-				
+							</ul>
+						</div>
+					</td>
+					<td>
+						<div class="map">
+							<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=230+old+oak+dr+Wheeling+60090&amp;output=embed">
+							</iframe>
+						</div>
+					</td>
+            	</tr>
+            	<tr>
+            		<td colspan="2">
+						<form method="post" id="contactmeform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+							<fieldset>
+								<legend>Contact me</legend>
+								<hr class="colorgraph">
+                        		<input type="text" name="name" id="name" placeholder="* First and Last Name">
+                        		<span class="error">* <?php echo $nameErr;?>
+								<input type="text" name="email" id="email" placeholder="* Email">
+								<span class="error">* <?php echo $emailErr;?>
+								<textarea rows="8" name="comment" id="comment" placeholder="* Your comment here"></textarea>
+								<hr class="colorgraph">
+								<div style="width: 30%; "><a href="#" class="button buttonShadow" onclick="document.getElementById('contactmeform').submit();">Send Message</a></div>
+							</fieldset>
+						</form>
+            		</td>
+            	</tr>
+            </table>
 		</span>
 		<script language='JavaScript' type='text/javascript' src='scripts/footer.js'></script>
 	</body>

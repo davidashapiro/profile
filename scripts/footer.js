@@ -38,7 +38,7 @@
 
 		document.write(" <div style='align: center; '> ");
 	      		document.write(" <ul id='footerLinks'> ");
-	      			document.write(" <li><a href='csoon.html'>About Me</a></li> ");
+	      			document.write(" <li><a href='index.html'>About Me</a></li> ");
 				document.write(" <li><a href='csoon.html'>Blog</a></li> ");
 				document.write(" <li><a href='csoon.html'>FAQ</a></li> ");
 				document.write(" <li><a href='csoon.html'>Terms</a></li> ");
@@ -59,11 +59,6 @@
 	      			document.write(" </div> ");
       			document.write(" </div> ");
       		document.write(" </div> <!-- end footer-bottom --> ");
-   							
-  		<!-- Java Script ================================================== --> 
-   		document.write(" <script src='scripts/plugins.js'></script> ");
-   		document.write(" <script src='scripts/jquery.appear.js'></script> ");
-   		document.write(" <script src='scripts/main.js'></script> ");
 
   var data = '&r=' + escape(document.referrer) + '&n=' + escape(navigator.userAgent) + '&p=' + escape(navigator.userAgent) + '&g=' + escape(document.location.href);
 
