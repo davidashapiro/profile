@@ -18,12 +18,12 @@
 												                document.write("</table>");
 												        document.write("</td>");
 												document.write("</tr>");
-											        document.write("<tr>");
-												        document.write("<td>");
-												                document.write("<div style='height:2px; width:2px; '><spacer></spacer></div>");
-												        document.write("</td>");
-												        document.write("<td bgcolor='#666666' width='100%'></td>");
-												        document.write("<td bgcolor='#666666'></td>");
+											    document.write("<tr>");
+													document.write("<td>");
+														document.write("<div style='height:2px; width:2px; '><spacer></spacer></div>");
+													document.write("</td>");
+													document.write("<td bgcolor='#666666' width='100%'></td>");
+													document.write("<td bgcolor='#666666'></td>");
 												document.write("</tr>");
 											document.write("</table>");
 										document.write("</td>");
