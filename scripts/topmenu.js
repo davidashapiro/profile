@@ -1,5 +1,13 @@
-var topmenuurls = ['index.html', 'resume.html', 'csoon.html', 'gallery1.html', 'contact.php' ];
-var topmenulabels = ['Home', 'Resume', 'Interests', 'Gallery', 'Contact Information' ];
+var topmenuurls = ['index.html', 
+					'resume.html', 
+					'csoon.html', 
+					'gallery1.html', 
+					'contact.php' ];
+var topmenulabels = ['Home', 
+					'Resume', 
+					'Interests', 
+					'Gallery', 
+					'Contact' ];
 
 document.write("<table cellpadding='0' cellspacing='0' border='0' style='border-collapse:collapse;'>");
 	document.write("<tr>");
