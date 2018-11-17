@@ -2,6 +2,9 @@
 	<head>
 		<title>David Shapiro - Contact</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href='css/styles.css' rel='stylesheet' type='text/css'>
 		<!-- //////// Favicon ////////  -->
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -110,7 +113,7 @@
   		return $data;
 	}
 ?>
-			<table style="font-weight: bold; font-size: 12pt;">
+			<table style="font-weight: bold; font-size: 12pt; width: 100%">
             	<tr>
             		<td valign="top">
             			<div id="contact">
@@ -128,14 +131,14 @@
       							</li>
       							<li>
       								<i class="fa fa-male"></i>
-      								<a href="http://DavidShapiro.ueuo.com/resume/">My Online Resume</a>
+      								<a href="http://davidshapiro.x10host.com/resume/">My Online Resume</a>
       							</li>
 							</ul>
 						</div>
 					</td>
 					<td>
 						<div class="map">
-							<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=230+old+oak+dr+Wheeling+60090&amp;output=embed">
+							<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=230+old+oak+dr+Buffalo+Grove+60089&amp;output=embed">
 							</iframe>
 						</div>
 					</td>
@@ -152,7 +155,7 @@
 								<span class="error">* <?php echo $emailErr;?>
 								<textarea rows="8" name="comment" id="comment" placeholder="* Your comment here"></textarea>
 								<hr class="colorgraph">
-								<div style="width: 30%; "><a href="#" class="button buttonShadow" onclick="document.getElementById('contactmeform').submit();">Send Message</a></div>
+								<div style="width: 30%; "><a href="#" class="button" onclick="document.getElementById('contactmeform').submit();">Send Message</a></div>
 							</fieldset>
 						</form>
             		</td>
