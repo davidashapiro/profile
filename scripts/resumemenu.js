@@ -1,7 +1,7 @@
 var rightmenuurls = ['', 'objective.html', 
 						'skills.html', 
 						'exp.html', 
-						'examples.php',
+						'examples.html',
 						'edu.html', 
 						'ref.html' ];
 var rightmenulabels = ['', 'Objective', 
