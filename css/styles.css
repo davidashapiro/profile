@@ -253,7 +253,8 @@ td.thatext a { color:#666666; }
 				top: 20px; 
 				left: 20px; 
 				padding: 10px;
-				background: rgba(234, 234, 234, 0.1);
+				width: 100%;
+				background: rgba(255, 255, 255, 0.3);
 			}
 			#phoneontop li { 
 				display: inline-block; 
