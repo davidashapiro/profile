@@ -249,11 +249,12 @@ td.thatext a { color:#666666; }
 			
 			#phoneontop {
 				list-style-type: none; 
-				position: absolute; 
-				top: 20px; 
+				position: fixed; 
+				top: 30px;
 				left: 20px; 
 				padding: 10px;
-				width: 100%;
+				width: 95%;
+				border: 1px solid #ddd;
 				background: rgba(255, 255, 255, 0.3);
 			}
 			#phoneontop li { 
