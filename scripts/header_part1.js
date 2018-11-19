@@ -22,7 +22,7 @@
 												document.write("<a target='_blank' href='https://www.facebook.com/dimavoron' class='fa fa-facebook' style='color: #ffffff'></a> ");
 												document.write("<a href='#' class='fa fa-google' style='color: #ffffff'></a> ");
 												document.write("<a href='skype:dima.shapiro' class='fa fa-skype' style='color: #ffffff'></a> ");
-												document.write("<a target='_blank' href='https://www.flickr.com/photos/taradunn/' class='fa fa-flickr' style='color: #ffffff'></a> ");
+												document.write("<a target='_blank' href='https://www.flickr.com/photos/shapirus/' class='fa fa-flickr' style='color: #ffffff'></a> ");
 												document.write("<a target='_blank' href='https://www.linkedin.com/in/davidashapiro' class='fa fa-linkedin' style='color: #ffffff'></a> ");
 												document.write("</td>");
 												document.write("</tr>");
