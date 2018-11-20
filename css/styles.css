@@ -250,13 +250,12 @@ td.thatext a { color:#666666; }
 			#phoneontop {
 				list-style-type: none; 
 				position: fixed; 
-				top: 30px; 
+				top: 30px;
 				left: 20px; 
 				padding: 10px;
 				width: 95%;
-				margin-right: 30px;
-				background: rgba(255, 255, 255, 0.3);
 				border: 1px solid #ddd;
+				background: rgba(255, 255, 255, 0.3);
 			}
 			#phoneontop li { 
 				display: inline-block; 
@@ -265,6 +264,84 @@ td.thatext a { color:#666666; }
 			#phoneontop li a { 
 				color: #555;
 				text-decoration: none;
+			}
+			
+			.pident {
+				color:#666666;
+				text-indent: 0px;
+				margin-left: 30px;
+				font-size: 12pt;
+				font-weight: bold;
+				margin:5px;
+			}
+			#socialstatus {
+					border-collapse: collapse;
+    				width: 70%;
+    				float: right;
+    				border: 1px solid #ddd;
+    				border-bottom: 0px;
+    				margin-bottom: 0px;
+			}
+			#socialstatus2 {
+    				border-collapse: collapse;
+    				width: 100%;
+    				border: 1px solid #ddd;
+    				border-top: 0px;
+    				margin-bottom: 0px;
+			}
+			#questionstable {
+					border: 1px solid #ddd;
+					border-collapse: collapse;
+					width: 100%;
+					margin-bottom: 10px;
+					margin-top: 10px;
+			}
+			#mystorytable {
+					border: 1px solid #ddd;
+					border-collapse: collapse;
+					width: 100%;
+					padding: 15px;
+			}
+
+			#socialstatus th, #socialstatus td {
+					text-align: left;
+    				padding: 8px;
+    				width: 50%;
+			}
+			#socialstatus2 td {
+    				text-align: left;
+    				padding: 8px;
+    				width: 50%;
+			}
+
+			#socialstatus tr:nth-child(even),
+			#socialstatus2 tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
+			#socialstatus th {
+    				background-color: #02679a;
+    				color: white;
+			}
+			
+			#questionstable th, #questionstable td {
+    				text-align: left;
+    				padding: 8px;
+    				width: 50%;
+    				border-right: 1px solid #ddd;
+			}
+
+			#questionstable tr:nth-child(even){
+				background-color: #f2f2f2;
+			}
+			#mystorytable th,
+			#questionstable th {
+    				background-color: #04679a;
+    				color: white;
+			}
+			#mystorytable td {
+					padding: 15px;
+					text-align: justify;
 			}
 				
 	
@@ -1240,104 +1317,4 @@ form.register-form .row {
     				transform: translate(-50%, -50%);
     				font-size: 48px;
     				font-weight: bold;
-			}
-			.pident {
-				color:#666666;
-				text-indent: 0px;
-				margin-left: 30px;
-				font-size: 12pt;
-				font-weight: bold;
-				margin:5px;
-			}
-			#socialstatus {
-					border-collapse: collapse;
-    				width: 70%;
-    				float: right;
-    				border: 1px solid #ddd;
-    				border-bottom: 0px;
-    				margin-bottom: 0px;
-			}
-			#socialstatus2 {
-    				border-collapse: collapse;
-    				width: 100%;
-    				border: 1px solid #ddd;
-    				border-top: 0px;
-    				margin-bottom: 0px;
-			}
-			#questionstable {
-					border: 1px solid #ddd;
-					border-collapse: collapse;
-					width: 100%;
-					margin-bottom: 10px;
-					margin-top: 10px;
-			}
-			#mystorytable {
-					border: 1px solid #ddd;
-					border-collapse: collapse;
-					width: 100%;
-					padding: 15px;
-			}
-
-			#socialstatus th, #socialstatus td {
-					text-align: left;
-    				padding: 8px;
-    				width: 50%;
-			}
-			#socialstatus2 td {
-    				text-align: left;
-    				padding: 8px;
-    				width: 50%;
-			}
-
-			#socialstatus tr:nth-child(even),
-			#socialstatus2 tr:nth-child(even) {
-				background-color: #f2f2f2;
-			}
-
-			#socialstatus th {
-    				background-color: #02679a;
-    				color: white;
-			}
-			
-			#questionstable th, #questionstable td {
-    				text-align: left;
-    				padding: 8px;
-    				width: 50%;
-    				border-right: 1px solid #ddd;
-			}
-
-			#questionstable tr:nth-child(even){
-				background-color: #f2f2f2;
-			}
-			#mystorytable th,
-			#questionstable th {
-    				background-color: #04679a;
-    				color: white;
-			}
-			#mystorytable td {
-					padding: 15px;
-					text-align: justify;
-			}
-			.button {
-    				background-color: #eaeaea;
-    				border: none;
-    				color: white;
-    				padding: 15px 32px;
-    				text-align: center;
-    				text-decoration: none;
-    				display: inline-block;
-    				font-size: 16px;
-    				margin: 4px 2px;
-    				cursor: pointer;
-    				-webkit-transition-duration: 0.4s; /* Safari */
-    				transition-duration: 0.4s;
-			}
-
-			.buttonShadow{
-    				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-			}
-			.buttonShadow:active {
-  				background-color: #3e8e41;
-  				box-shadow: 0 5px #666;
-  				transform: translateY(4px);
 			}
