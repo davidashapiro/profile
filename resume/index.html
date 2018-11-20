@@ -4,7 +4,6 @@
 
 	<title>David Shapiro</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
 	<meta name="description" content=" ... add description here ... " />
 	<meta name="keywords" content=" ... add keywords here ... " />
 	
@@ -17,17 +16,14 @@
 	<script src="_layout/js/myfunk.js" type="text/javascript"></script>
 	
 	<!-- //////// Css StyleSheets ////////  -->
-	
 	<link href="_layout/screen-style.css" rel="stylesheet" type="text/css" />
 	<link href="_layout/print-style.css" rel="stylesheet" type="text/css" media="print" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<!-- //////// jQuery ////////  -->
-	
-	<script src="_layout/js/jquery-1.3.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
 	<!-- //////// Cufon Font Replacement ////////  -->
-	
 	<script src="_layout/js/cufon-yui.js" type="text/javascript"></script>
 	<script src="_layout/js/Aller.font.js" type="text/javascript"></script>
 	<script type="text/javascript">
@@ -36,20 +32,7 @@
 		Cufon.replace('h2.cv-section-name');
 	</script>
 	
-	<!-- //////// FancyBox - jQuery powered Lightbox ////////  -->
-	
-	<link rel="stylesheet" type="text/css" href="_layout/js/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
-	<script type="text/javascript" src="_layout/js/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("a.lightbox").fancybox({
-				'overlayOpacity': 0.7,
-				'overlayColor'	: '#333'
-			});
-		});
-	</script>
 	<!-- //////// Email Me Panel Animation ////////  -->
-	
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".emailme").click(function(){
@@ -61,7 +44,6 @@
 	</script>
 	
 	<!-- //////// Contact Form ////////  -->
-	
 	<script type="text/javascript">                                         
 	/* <![CDATA[ */
 		$(document).ready(function(){ // sends the data filled in the contact form to the php file and shows a message
@@ -69,7 +51,7 @@
 				var str = $(this).serialize();
 				$.ajax({
 				   type: "POST",
-				   url: "_layout/php/send.php",
+				   url: "send.php",
 				   data: str,
 				   success: function(msg)
 				   {
@@ -91,65 +73,30 @@
 		});
 	/* ]]> */	
 	</script>  
-	<style>
-		.myicons { margin:0; padding: 3; padding-right: 7; }
-		.myclass { font-size: 12pt; font-weight: bold; text-align: right; }
-		.fontclass { font-size: 11pt; color: black; }
-		.item p {
-			margin-left: 20px;
-		}
-		.fa {
-  			padding: 8px;
-  			font-size: 12pt;
-  			width: 20px;
-  			text-align: center;
-  			text-decoration: none;
-  			margin: 5px 2px;
-		}
-		#contactList { 
-			margin: 0px;
-			padding: 0px;
-			color: #666;
-		}
-		#contactList li {
-			padding: 0;
-			margin: 0;
-		}
-		#contactList li a {
-			padding: 0;
-			margin: 0;
-			text-decoration: none;
-			color: #666;
-		}
-		#contactList li i { 
-			margin:0; 
-			width: 10px; 
-			padding: 5px; 
-			padding-right: 10px; 
-		}
-        </style>
 </head>
-<body>
-       
+<wbody>
 	<div id="cv">
-
 		<!-- // ABOUT ME /////////////////////////////////////////////////////////////////// -->
 		<div class="cv-section first-cv-section fixed">
 			<div class="person">
-				<a class="lightbox" rel="mypics" href="_content/d1.jpg" title="David Shapiro" >
-					<img src="_content/d1.jpg" width="80" height="100" alt="David Shapiro" />
+				<a data-fancybox="gallery" href="_content/dimav2.jpg">
+					<img width="100" height="100" src="_content/dimav2.jpg">
+				</a>
+				<!--<a class="lightbox" rel="mypics" href="_content/dimav2.jpg" title="David Shapiro" >
+					<img src="_content/dimav2.jpg" width="80" height="100" alt="David Shapiro" />-->
 				</a>
 				<h1>David Shapiro</h1>
 				<h2>Sr. Java Developer / Project Manager</h2>
 			</div>
 			<div id="contact-info">
-				<ul id="social-media" style="font-size: 18px; ">
+				<ul id="social-media" style=" ">
 					<li><a target="_blank" href="https://twitter.com/DimaShapiro" class="fa fa-twitter"></a></li>
 					<li><a target="_blank" href="https://www.facebook.com/dimavoron" class="fa fa-facebook"></a></li>
-					<li><a href="#" class="fa fa-google"></a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/shapirus" class="fa fa-flickr"></a></li>
 					<li><a target="_blank" href="https://www.linkedin.com/in/davidashapiro" class="fa fa-linkedin"></a></li>
+					<li><a target="_blank" href="skype:dima.shapiro" class="fa fa-skype"></a></li>
 				</ul>
-				<div id="contact" style="margin:0; padding:0; ">
+				<div id="contact">
 					<ul id="contactList">
 						<li>
         					<i class="fa fa-envelope-o"></i>
@@ -163,7 +110,7 @@
         					<a href="http://maps.google.com/maps?q=60090">Wheeling, IL, 60090</a>
       					</li>
 						<li>
-							<i class="fa fa-file-o"></i>
+							<i class="fa fa-file-pdf-o"></i>
 							<a target="_blank" href="davidshapiroLite2018.pdf" target="_blank">Resume in PDF format</a>
 						</li>
 					</ul>
