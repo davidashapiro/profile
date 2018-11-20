@@ -1,6 +1,6 @@
 var topmenuurls = ['index.html', 
 					'resume.html', 
-					'csoon.html', 
+					'interests.html', 
 					'gallery1.html', 
 					'contact.php' ];
 var topmenulabels = ['Home', 
