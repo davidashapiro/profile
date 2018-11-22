@@ -55,7 +55,7 @@ body{
 			
 		.cv-section-name{ float:left; width:200px; }
 				
-		.cv-section-items{ float:right; margin-right:10px; width:490px; }
+		.cv-section-items{ float:right; margin-right:10px; width:490px; font-weight: bold;}
 		
 			.item{ margin-bottom:20px; padding-bottom:20px; }
 				
@@ -113,7 +113,7 @@ body{
 		
 		.cv-section-items{ }
 		
-			.item{ border-bottom:1px solid #dfdfdf; }
+			.item{ border-bottom:1px solid #ccc; }
 				
 				.item h4{ background-color:#eee; color:#333; font-size:12px; text-transform:uppercase; }
 					.item h4:hover{ background-color:#000; color:#fff; }
@@ -124,7 +124,7 @@ body{
 				.item h3{ color:#262625; font-family:Georgia, serif; font-size:15px; font-style:italic; font-weight:400; }
 				
 				.item p{ text-align:justify; }
-				.item ul{ list-style:inside; text-align:justify; margin-left: 40px;}
+				.item ul{ list-style:outside; text-align:justify; margin-left: 40px;}
 					.item ul li{ list-style-type:disc; }
 					
 			.last-item{ border-bottom:none; }
