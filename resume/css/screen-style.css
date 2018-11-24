@@ -53,9 +53,9 @@ body{
 				ul#social-media{ margin-bottom:18px; }
 				ul#social-media li{ display:inline; }	
 			
-		.cv-section-name{ float:left; width:25% }
+		.cv-section-name{ float:left; width:20% }
 				
-		.cv-section-items{ float:right; margin-right:10px; width:70%; font-weight: bold;}
+		.cv-section-items{ float:right; margin-right:10px; width:75%; font-weight: bold;}
 		
 			.item{ margin-bottom:20px; padding-bottom:20px; }
 				
@@ -238,36 +238,37 @@ textarea{height:50px;}
 		}	
 
 
-#backtotop {
-cursor : pointer;
-/*display : none;*/
-margin : 0px 0px 0px 370px;
-position : fixed;
-bottom : 10px;
-font-size : 90%;
-padding : 10px;
-width : 100px;
-text-align : center;
-background-color : #000;
-border-radius : 8px;
--webkit-border-radius : 8px;
--moz-border-radius : 8px;
-filter: alpha(opacity=60);
--khtml-opacity : 0.6;
--moz-opacity : 0.6;
-opacity : 0.6;
-color : #FFF;
-font-size : 14px;
-z-index : 10000;
-font-family: arial;
-}
+		#backtotop {
+			cursor : pointer;
+			/*display : none;*/
+			margin : 0px 0px 0px 370px;
+			position : fixed;
+			bottom : 10px;
+			font-size : 90%;
+			padding : 10px;
+			width : 70px;
+			text-align : center;
+			background-color : #222;
+			border-radius : 8px;
+			-webkit-border-radius : 8px;
+			-moz-border-radius : 8px;
+			filter: alpha(opacity=60);
+			-khtml-opacity : 0.6;
+			-moz-opacity : 0.6;
+			opacity : 0.6;
+			color : #FFF;
+			font-size : 14px;
+			z-index : 10000;
+			font-family: arial;
+			right: 10px;
+		}
 
-#backtotop:hover {
-filter : alpha(opacity=90);
--khtml-opacity : 0.9;
--moz-opacity : 0.9;
-opacity : 0.9;
-}
+		#backtotop:hover {
+			filter : alpha(opacity=90);
+			-khtml-opacity : 0.9;
+			-moz-opacity : 0.9;
+			opacity : 0.9;
+		}
 
 		.myicons { margin:0; padding: 3; padding-right: 7; }
 		.myclass { font-size: 12pt; font-weight: bold; text-align: right; }
@@ -278,7 +279,7 @@ opacity : 0.9;
 		.fa {
   			padding: 6px;
   			font-size: 8pt;
-  			width: 16px;
+  			width: 26px;
   			text-align: center;
   			text-decoration: none;
   			margin: 5px 2px;
