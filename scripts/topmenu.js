@@ -2,14 +2,12 @@ var topmenuurls = ['index.html',
 					'resume.html', 
 					'interests.html', 
 					'gallery1.html', 
-					'contact.php',
-					'http://davidshapiro.x10host.com/apps/phpbb/' ];
+					'contact.php' ];
 var topmenulabels = ['Home', 
 					'Resume', 
 					'Interests', 
 					'Gallery', 
-					'Contact',
-					'Forum' ];
+					'Contact' ];
 
 document.write("<table cellpadding='0' cellspacing='0' border='0' style='border-collapse:collapse;'>");
 	document.write("<tr>");
