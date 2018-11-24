@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>David Shapiro</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content=" ... add description here ... " />
+	<meta name="keywords" content=" ... add keywords here ... " />
+	
+	<!--<meta name="viewport" content="width = 730, initial-scale=0.70, minimum-scale = 0.5,  maximum-scale = 1.25"/>-->
+	
+	<!-- //////// Favicon ////////  -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+	<script src="js/myfunk.js" type="text/javascript"></script>
+	
+	<!-- //////// Css StyleSheets ////////  -->
+	<link href="css/screen-style.css" rel="stylesheet" type="text/css" />
+	<link href="css/print-style.css" rel="stylesheet" type="text/css" media="print" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+	<!-- //////// Cufon Font Replacement ////////  -->
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/Aller.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1');
+		Cufon.replace('.item h2');
+		Cufon.replace('h2.cv-section-name');
+	</script>
+	
+	<!-- //////// Email Me Panel Animation ////////  -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".emailme").click(function(){
+				$(".panel").toggle("fast");
+				$(this).toggleClass("active");
+				return false;
+			});
+		});
+	</script>
+	
+	<!-- //////// Contact Form ////////  -->
+	<script type="text/javascript">                                         
+	/* <![CDATA[ */
+		$(document).ready(function(){ // sends the data filled in the contact form to the php file and shows a message
+			$("#contact-form").submit(function(){
+				var str = $(this).serialize();
+				$.ajax({
+				   type: "POST",
+				   url: "send.php",
+				   data: str,
+				   success: function(msg)
+				   {
+						$("#formstatus").ajaxComplete(function(event, request, settings){
+							if(msg == 'OK'){ // Message Sent? Show the 'Thank You' message and hide the form
+								result = '<div class="formstatusok">Your message has been sent. Thank you!</div>';
+								$("#fields").hide();
+							}
+							else{
+								result = msg;
+							}
+							$(this).html(result);
+						});
+					}
+				
+				 });
+				return false;
+			});
+		});
+	/* ]]> */	
+	</script>
+</head>
+<wbody>
+	
+	<ul id='linksontop'>
+		<li ><a href='#professionalanchor' class="button">Profile</a></li>
+		<li ><a href='#mainskillsanchor' class="button">Main Skills</a></li> 
+		<li ><a href='#workexpanchor' class="button">Work Experience</a></li> 
+		<li ><a href='#skillsanchormanager' class="button">Managerial Skills</a></li> 
+		<li ><a href='#skillsanchortech' class="button">Technical Skills</a></li>
+		<li ><a href="#educationanchor" class="button">Education</a></li>
+	</ul>
+	<div id="cv">
+		<!-- // ABOUT ME /////////////////////////////////////////////////////////////////// -->
+		<div class="cv-section first-cv-section fixed">
+			<div class="person">
+				<a data-fancybox="gallery" href="img/dimav2.jpg" >
+					<img width="120" height="130" src="img/dimav2.jpg">
+				</a>
+				<h1 id="professionalanchor">David Shapiro</h1>
+				<h2>Sr. Java Developer</h2>
+				<h2>Project Manager</h2>
+			</div>
+			<div id="contact-info">
+				<ul id="social-media" style=" ">
+					<li><a target="_blank" href="https://twitter.com/DimaShapiro" class="fa fa-twitter"></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/dimavoron" class="fa fa-facebook"></a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/shapirus" class="fa fa-flickr"></a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/in/davidashapiro" class="fa fa-linkedin"></a></li>
+					<li><a target="_blank" href="skype:dima.shapiro" class="fa fa-skype"></a></li>
+				</ul>
+				<div id="contact">
+					<ul id="contactList">
+						<li>
+							<i class="fa fa-envelope-o"></i>
+							<a href="mailto:d321973@mail.com">d321973@mail.com</a>
+						</li>
+						<li>
+							<i class="fa fa-phone"></i> +1 949-444-2260
+						</li>
+						<li>
+							<i class="fa fa-map-marker"></i>
+							<a href="http://maps.google.com/maps?q=60090">Wheeling, IL, 60090</a>
+						</li>
+						<li>
+							<i class="fa fa-file-pdf-o"></i>
+							<a href="davidshapiroLite2018.pdf" download>Resume in PDF format</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- end .cv-section -->
+		
+		<!-- // PROFESSIONAL PROFILE //////////////////////////////////////////////////////// -->
+		
+		<div class="cv-section fixed">
+			<h2 class="cv-section-name">Professional Profile</h2>
+			<div class="cv-section-items">
+				<div class="item last-item">
+					<p>I am an experienced Software Developer with profound knowledge of J2EE framework, Object-Oriented Methodologies and corporate experience in analysis, design, development and maintenance of J2EE and other Web Applications using WSAD and other tools. Experience in full-lifecycle development – problem definition, technological implementation (coding), quality assurance and maintenance.
+						<ul>
+							<li>Highly motivated hard worker with professional attitude and work ethics.</li>
+							<li>Quick and independent learner, always eager to improve my knowledge.</li>
+							<li>Bright, friendly, and reliable.</li>
+							<li>I get along well with others and deliver work on schedule.</li>
+						</ul>
+						<h2>My main skills are:</h2>
+						<ul>
+							<li>Project Management (5 years)</li>
+							<li>Java, J2EE (10+ years)</li>
+							<li>Web Applications development (10+ years)</li>
+							<li>Application Analysis (10+ years)</li>
+							<li>Business analysis (5+ years)</li>
+							<li>Application testing (10+ years)</li>
+							<br/>
+							I am a US citizen.
+						</ul>
+					</p>
+				</div><!-- end .item -->
+			</div><!-- end .cv-section-items -->
+		</div><!-- end .cv-section -->
+		
+		<!-- /////////// My Main Skills. //////////////////// -->
+		<div class="cv-section fixed">
+			<h2 class="cv-section-name">Main Skills</h2>
+			<div class="cv-section-items">
+				<div class="item">
+					<h2 id="mainskillsanchor">Project Management:</h2>
+					<p>I was managing team of consultants 2 on-site and 10 offshore. I had to work with both fixed bid projects (fixed budget) and fixed time projects. I also worked with standard projects to make sure it is completed within budget and on time. I was managing project risks such as availability of additional resources from other dev teams and infrastructure resources. Most of the projects were full SDLC.
+				</div><!-- end .item -->
+				<div class="item">
+					<h2>Java/J2EE: </h2>
+					<p>Last 8 years I worked with IBM WebSphere environment starting 5.1 and finishing on 8.4. I worked with JMS and enterprise bus, Web Services, JDBC and other related technologies.
+				</div><!-- end .item -->
+				<div class="item">
+					<h2>Web applications: </h2>
+					<p>I designed and implemented web applications using Struts, JSP, HTML, JavaScript, XML, XSLT, Ajax and JSON. Web application were designed using SOA architecture enabling tier and object separation and generalization. I used 3 tier approach with UI as tier 1, Java/J2EE back end as tier 2 and Database (Oracle, IBM iSeries DB2) as tier 3. All tiers were designed to be independent from each other using interfaces.
+				</div><!-- end .item -->
+				<div class="item">
+					<h2>Application analysis: </h2>
+					<p>If I am responsible for developing and application or at least for creating a solution, then I always tries to implement logging mechanism in all tiers of the application. This logging mechanism would on/off mechanism not to slow production version of app. Analyzing application that I know nothing off is usually involved going thru source code, testing UI to understand app functionality, creating data flow diagram, process flowchart and etc. it helps if some tools are available to simplify app analysis.
+				</div><!-- end .item -->
+				<div class="item">
+					<h2>Business Analysis: </h2> 
+					<p>I closely worked with business users of our web applications to help them solve business problems and increase their productivity. Sometimes suggesting a solution I was able to see in their area or request coming from business users it all started with business requirements. I am very good at getting to the bottom of the problem and creating requirements for dev team to implement. I also work with different business or technical teams to create full solution. I do a good job of communicating statuses to both business users and IT managers and stakeholders.
+				</div><!-- end .item -->
+				<div class="item last-item">
+					<h2>Application testing: </h2>
+					<p>I was involved in different types of testing the application including the systems of applications were part of. I did Unit testing, UI testing, UAT testing with business users, integration testing of all components of the system and data flow testing.
+				</div><!-- end .item -->
+			</div><!-- end .cv-section-items -->
+		</div><!-- end .cv-section -->
+
+		<!-- // WORK EXPERINCE /////////////////////////////////////////////////////////// -->
+		
+		<div class="cv-section fixed">
+			<h2 class="cv-section-name">Work Experience</h2>
+			<div class="cv-section-items">
+				<div class="item">
+					<h4>Dec 2015 - Present</h4>
+					<h2 id="workexpanchor">Self-employed, Greater Chicago Area</h2>
+					<h3>Consultant</h3>
+					<br />
+					<ul>
+						<li>I am managing team of consultants on-site and offshore.</li>
+						<li>I am doing code reviews and testing.</li>
+						<li>I am following projects thru full SDLC.</li>
+					</ul>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>June 2010 - Oct 2015</h4>
+					<h2>Walgreens Co. Deerfield, IL</h2>
+					<h3>Project Manager</h3>
+					<br />
+					<ul>
+						<li>I am managing team of consultants on-site and offshore.</li>
+						<li>I am working with allocated budget for this projects to make sure we project is completed within budget and on time.</li>
+						<li>I am managing project risks.</li>
+						<li>I am following projects thru full SDLC.</li>
+					</ul>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>May 2009 - June 2010</h4>
+					<h2>Walgreens Co. Deerfield, IL</h2>
+					<h3>Sr. Business Systems Analyst</h3>
+					<br />
+					<p>I am responsible for managing project to create collaboration portal for Vendors/Supplier and corporate Walgreens staff. I was managing project from RFI to vendors (IBM, Microsoft and Oracle) for collaboration packages/portals to going into production for pilot vendors.
+						<ul>
+							<li>Working with Vendors and business users to determine the best collaboration platform/package to be used.</li>
+							<li>Working with Vendors to determine work plan for implementing the platform in corporate environment. (Microsoft SharePoint 2010)</li>
+							<li>Gathering requirements from business users.</li>
+							<li>Working with infrastructure groups (security, hardware) to determine the risks and path to implement the solution within corporate network/environment.</li>
+							<li>Working with consultants to supervise the development/implementation of desired features.</li>
+							<li>Integrating Java based applications with SharePoint 2010 Portal.</li>
+							<li>Working with multiple groups (Network, security) and SharePoint experts to bring the solution to production environment and selected pilot vendor use.</li>
+						</ul>
+					</p>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>June 2007 - May 2009</h4>
+					<h2>Walgreens Co. Deerfield, IL</h2>
+					<h3>Sr. Programmer/Analyst</h3>
+					<br />
+					<p>Responsible for multiple J2EE projects in Retails Systems and Vendor support department. I am responsible for implementing new enhancements to the existing Distribution Centers Order Management applications and creating new Applications to manage Orders from Direct to Store Vendors.
+						<ul>
+							<li>IBM Websphere WSAD 5.1 (Enhancements to existing applications).</li>
+							<li>IBM Websphere RAD 7 (New applications).</li>
+							<li>Java 1.3 and 1.6</li>
+							<li>WebMethods 6.5.</li>
+							<li>EDI.</li>
+							<li>JDBC to Oracle and DB2 on iSeries AS400</li>
+							<li>JMS (Integrated part of WAS 6.1).</li>
+							<li>Servlets.</li>
+							<li>Portlets with Portal framework.</li>
+							<li>Web Services, SOAP.</li>
+							<li>XML, XML Schema</li>
+						</ul>
+					</p>
+				</div><!-- end .item -->
+
+				<div class="item">
+					<h4>March 2007 - June 2007</h4>
+					<h2>ULINE Inc., Waukegan IL</h2>
+					<h3>Contractor</h3>
+					<br />
+					<p>
+						<b>Overview</b></br>
+							Uline has established a direction to migrate from its current RPG based Order Management & Call Center system to an application with a rich user interface, and a system design that incorporates a more maintainable object oriented/JAVA based best practices.  The Order Management System (OMS) is used by Customer Support Representatives (CSR)s across six (6) Uline contact centers located in;
+							<ul>
+								<li>Chicago, IL</li>
+								<li>Atlanta, GA</li>
+								<li>Los Angeles, CA</li>
+								<li>Minneapolis, MN</li>
+								<li>Dallas, TX</li>
+								<li>Philadelphia, PA</li>
+							</ul>
+							The applications used by the 250-300 CSR’s constitute the most strategically important applications for the company.  The majority of customer interactions are supported by these applications.  Uline sells commodity products, and the level of service provided by their CSR’s is a key differentiating factor.</br></br>
+
+						<b>OMS (My responsibilities)</b>
+						<ul>
+							<li>Third Party Interfaces with UPS – Tracking Shipments, FEDEX – Service Availability, Tracking Shipments, GSO (Golden State) – Tracking packages.</li>
+							<li>Controller layer: MDBs, contract validations.</li>
+							<li>Business Services include Stateless Session EJBs.</li>
+							<li>Integration Services include Data Objects returned to the client, Integration Adapters for DBs, Creation of XML, XML parsing.</li>
+						</ul>
+
+						<b>Technologies</b>
+						<ul>
+							<li>Technologies that were used include Java 5, JMS using WebSphere SIB, Session EJBs, MDB, JDBC, Web Services, XML Parsing.</li>
+							<li>Development Platform: RAD 7.0.1. </li>
+							<li>Application is running on WebSphere App Server 6.1. </li>
+							<li>Duties include: design, coding, testing. </li>
+						</ul>
+					</p>
+				</div><!-- end .item -->
+				
+				<div class="item">
+					<h4>July 2006 - Jan 2007</h4>
+					<h2>FirstEnergy, Akron OH</h2>
+					<h3>Contractor</h3>
+					<br />
+					<p>
+					Architecture, Developed and Tested Web CSR application. This application is for Customer Service Representative working on helping customers of FirstEnergy Companies maintain their web site registration. This includes functionality to register new customers, removing customers, adding and removing accounts to/from their site profile. Web CSR also allowed updating their profile, changing passwords, unlocking the customer, if the customer failed to login more then 3 times and was locked out. Architecture and Develeloped Billing and Payments options of Customer Web Site. Those options allowed to view their accounts, make Bank Draft payments, view payment history and other billing and payment related functionality. Bother of these applications were integrated with SAP thru Web Methods web service calls.</br>
+					<ul>
+						<li>Web Technologies that were used include Java 1.4.1, Struts 1.2.7, Sitemesh, log4j, JDBC, Web Services. </li>
+						<li>Development Platform: SAP NetWeaver. </li>
+						<li>Application is running on Apache Web Server and SAP J2EE Engine. </li>
+						<li>Supervised team of 2 Contractors.</li>
+						<li>Duties include: analysis, design, coding, testing.</li>
+					</ul>
+				</p>
+				</div><!-- end .item -->
+				
+				<div class="item">
+					<h4>March 2002 - Apr 2005</h4>
+					<h2>AT&amp;T. Hoffman Estates, IL</h2>
+					<h3>Technical Architect</h3>
+					<br />
+					</p>
+					Architected, developed and implemented various solutions using J2EE framework and other technologies.</br>
+						<b>1.	March 2004 - April 2005</b>
+						<ul>
+							<li>The eBill team has the need to send upwards of 200,000 real-time emails per day relating to Online Payment Capabilities </li>
+							<li>Designed and implemented a sophisticated distributed system utilizing J2EE approach using WAS 5.1.1 </li>
+							<li>Developed high-throughput asynchronous transaction processing capability through the use of Sonic ver. 4 Queue and JMS </li>
+							<li>Managed 2 Analysts and 1 Senior Analyst as part of the team.</li>
+							<li>Coding and testing of multiple stateless EJBs including: Validator, Content Manager, Emailer, Logger, DB Manager, and others) </li>
+							<li>Sophisticated transaction handling with two-phase implementation </li>
+						</ul>
+						<b>2.	March 2003 - March 2004</b>
+						<ul>
+							<li>Development of J2EE compliant Sales Aid Application Server using WSAD 5 utilizing Enterprise Offer Management Server and UM BIS </li>
+							<li>App Server publishes Web Services which are invoked from Desktop client application. </li>
+							<li>Web Services invoke Session Bean which does all the work including communicating with Epiphany Rule based Offer Management System, Oracle Database and Usage Management Data. </li>
+						</ul>
+						<b>3.	December 2002 - March 2003</b>
+						<ul>
+							<li>Development of client (servlet) software that would sit between HP and SBC Rubik Server. </li>
+							<li>Implemented bi-directional communication using XML SOAP and Rubik Web Services </li>
+						</ul>
+						<b>4.	March 2002 - December 2002</b> 
+						<ul>
+							<li>Development of WebGate (web based project Management tool) and integration with Artemis/SPI. </li>
+							<li>Conversion and enhancement project moving the application from IIS/COM platform to J2EE </li>
+							<li>Tight integration into Artemis/SPI using web services </li>
+						</ul>
+					Tools:             WSAD, WebSphere, IIS, Rubik, WAS</br>
+						Databases:      UDB, Oracle, MS SQL Sever 2000
+					</p>
+				</div><!-- end .item -->
+				
+				<div class="item">
+					<h4>June 1998 - Mar 2002</h4>
+					<h2>Cohesia  Co.</h2>
+					<h3>Software Engineer</h3>
+					<br />
+					<p>
+					<ul>
+						<li>Developed and maintained MASS, Metallurgical Plant Control application, in a Client/Server environment. </li>
+						<li>Developed and implemented system architecture utilizing Object Oriented DB on Oracle 7.3 platform. </li>
+						<li>Creation of client and server components using VC++ with MFC. </li>
+						<li>Evaluation and integration of the following third party components: RogueWave DBTools, Tools.h++, ObjectiveGrid, IONAs Orbix 2.3 </li>
+						<li>Design of the desktop GUI as well as prototyping of the Web Application. </li>
+						<li>Coding of ISAPI DLL in VC++. The dll responsible for generation of HTML/JavaScript output. </li>
+						<li>Evaluation of JDK 1.3 as alternative front end implementation.  </li>
+					</ul>
+						Tools:                        IIS, Visual Studio, VC++, VB6, VSS</br> 
+						Databases:                 MS SQL Sever 7
+					</P>
+				</div><!-- end .item -->
+				
+				<div class="item">
+					<h4>May 1996 - May 1998</h4>
+					<h2>Advanced System Designs</h2>
+					<h3>Programmer/Analyst </h3>
+					<br />
+					<ul>
+						<li>Development of Client/Server application, using Visual Age C++ for Windows on PC side. Server is AS/400. </li>
+						<li>Application was designed to locate and track earth-moving equipment using Orbcomm low orbit satellites. </li>
+						<li>With Orbcomm satellites data can be sent both ways enabling application not just receive data but also send data to equipment in the field. Duties include coding, testing, installation.</li>
+					</ul>
+				</div><!-- end .item -->
+
+				<div class="item">
+					<h4>Jan 1995 - Apr 1996</h4>
+					<h2>Professional Solutions, Inc.</h2>
+					<h3>Programmer/Analyst</h3>
+					<br />
+					<ul>
+						<li>Working on implementation of Michigan Child Support Enforcement System (CSES). </li>
+						<li>Implemented Payments Processing System, in Detroit (high volume data system, more then 1 million dollars per day) (C, Clipper on OS/2 platform). </li>
+						<li>Development of CSES on C++ and Client/Server platform. Duties include analysis, design, and coding, testing, installation</li>
+					</ul>
+				</div><!-- end .item -->
+
+				<div class="item last-item">
+					<h4>November 1993 – January 1995</h4>
+					<h2>Dolman Technologies Group, Lansing, MI</h2>
+					<h3>Consultant</h3>
+					<br />
+					<ul>
+						<li>Designed programs for communications between PC and Audio/Video recording system.</li>
+						<li>Duties include: analysis, design, coding, testing, enhancement and modification of existing programs (C/C++), support for PC software and hardware.</li>
+					</ul>
+				</div><!-- end .item -->
+				
+			</div><!-- end .cv-section-items -->
+			
+		</div><!-- end .cv-section -->
+
+		<!-- // MANAGERIAL SKILLS /////////////////////////////////////////////////////////// -->
+		<div class="cv-section fixed">
+			<h2 class="cv-section-name">Managerial Skills</h2>
+			<div class="cv-section-items">
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2 id="skillsanchormanager"><a href="#">Software tools for project management</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">Accurate estimating and cost control</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">Project execution and control</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">Managing risk and making decisions</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">Effective problem management</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">Managing change within an organization</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 6 years</h4>
+					<h2><a href="#">SDLC methodologies</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">Process-oriented</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">team and individual leadership</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">oral and written communication</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">conflict resolution</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">delegating</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">coaching and mentoring</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">industry knowledge</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Excellent, 2 years</h4>
+					<h2><a href="#">design skills</a></h2>
+				</div><!-- end .item -->
+				<div class="item last-item">
+					<h4>Excellent, 1 year</h4>
+					<h2><a href="#">ability to prepare comprehensive technical specifications</a></h2>
+				</div><!-- end .item -->
+			</div><!-- end .cv-section-items -->
+		</div><!-- end .cv-section -->
+		
+		<!-- // TEHNICAL SKILLS /////////////////////////////////////////////////////////// -->
+		
+		<div class="cv-section fixed">
+			<h2 class="cv-section-name">Technical Skills</h2>
+			<div class="cv-section-items">
+				<div class="item">
+					<h4>Expert, 10 years</h4>
+					<h2 id="skillsanchortech"><a href="#">JAVA / J2EE</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Expert, 14 years</h4>
+					<h2><a href="#">XML &amp; XSL</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Expert, 10 years</h4>
+					<h2><a href="#">JDBC</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Advanced, 3 years</h4>
+					<h2><a href="#">JMS &amp; SOAP</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Advanced, 6 years</h4>
+					<h2><a href="#">C / C++</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Expert, 15 years</h4>
+					<h2><a href="#">HTML / CSS / JSP / PHP / ASP</a></h2>
+				</div><!-- end .item -->
+				<div class="item">
+					<h4>Advanced, 6 years</h4>
+					<h2><a href="#">Javascript</a></h2>
+				</div><!-- end .item -->
+				<div class="item last-item">
+					<h4>Beginner, 1 year</h4>
+					<h2><a href="#">jQuery Framework</a></h2>
+				</div><!-- end .item -->
+			</div><!-- end .cv-section-items -->
+		</div><!-- end .cv-section -->
+		
+		<!-- // EDUCATION ////////////////////////////////////////////////////////////////// -->
+		
+		<div class="cv-section last-cv-section fixed">
+			<h2 class="cv-section-name">Education</h2>
+			<div class="cv-section-items">
+				<div class="item last-item">
+					<h2 id="educationanchor">Radio-Electronic-Automation Institute, Moscow, USSR</h2>
+					<h3>BSCS in Mathematics and Computer Science</h3>
+					<br />
+					<p>	•	Held leadership positions with a university volunteer network.</br>
+							•	Speak read and write English and Russian fluently.
+					</p>	
+				</div><!-- end .item -->
+			</div><!-- end .cv-section-items -->
+		</div><!-- end .cv-section -->
+	</div><!-- end #cv -->
+	<!-- ////////////////////////////////////////////////////////////////////////////// -->
+	<div class="panel">
+		<p id="formstatus"></p>
+		<form id="contact-form" action="javascript:alert('success!');">
+			<fieldset>
+				<p>
+					<input class="textbox" type="text" name="name" value="Name*"
+					onfocus="if(this.value=='Name*')this.value='';" onblur="if(this.value=='')this.value='Name*';" />
+				</p>
+				<p>
+					<input class="textbox" type="text" name="email" value="Email*"
+					onfocus="if(this.value=='Email*')this.value='';" onblur="if(this.value=='')this.value='Email*';" />
+				</p>
+				<p>
+					<input class="textbox" type="text" name="subject" value="Subject*"  
+					onfocus="if(this.value=='Subject*')this.value='';" onblur="if(this.value=='')this.value='Subject*';"/>
+				</p>
+				<p>
+					<textarea class="textbox" name="message" rows="3" cols="25"></textarea>
+				</p>
+				<p>
+					<input class="btn" type="submit" name="submit" value="Send!" />
+					<!--<input class="btn" type="reset" name="submit" value="Reset" />-->
+				</p>
+			</fieldset>
+		</form><!-- end #contact-form -->
+	</div><!-- end .panel -->
+	<br />
+	<br />
+	
+	<a class="emailme" href="#">Email Me</a>
+	<!-- <a class="emailme" href="#">Email Me</a> -->
+	<button onclick="scrollWindow1()" id="myBtn" title="Go to top">Top</button>
+	<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
