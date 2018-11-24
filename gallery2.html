@@ -16,6 +16,16 @@
 			var topmenu = 3;
 			var rightmenu = 2;
 		</script>
+		<script type="text/javascript">
+			document.onreadystatechange = function () 
+			{
+				if (document.readyState === "complete") 
+				{
+					//document.getElementById("PreLoaderBar").style.display = "none";
+					document.getElementById("bigloader").style.display = "none";
+				}
+			}
+		</script>
 		<style>
 			img {
 				margin: 2px;
@@ -23,6 +33,7 @@
 		</style>
 	</head>
 	<body>
+		<div id="bigloader"></div>
 		<script language='JavaScript' type='text/javascript' src='scripts/header_part1.js'></script>
 		<script language='JavaScript' type='text/javascript' src='scripts/topmenu.js'></script>
 		<script language='JavaScript' type='text/javascript' src='scripts/header_part2.js'></script>

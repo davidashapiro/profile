@@ -62,6 +62,16 @@
 			}
 			.error {color: #FF0000;}
 		</style>
+		<script type="text/javascript">
+			document.onreadystatechange = function () 
+			{
+				if (document.readyState === "complete") 
+				{
+					//document.getElementById("PreLoaderBar").style.display = "none";
+					document.getElementById("bigloader").style.display = "none";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<script language='JavaScript' type='text/javascript' src='scripts/header_part1.js'></script>
@@ -115,6 +125,11 @@
   		return $data;
 	}
 ?>
+			<div id="bigloader"></div>
+
+			<!--<div class="progress" id="PreLoaderBar">
+				<div class="indeterminate"></div>
+			</div>-->
 			<table style="font-weight: bold; font-size: 12pt; width: 100%">
             	<tr>
             		<td valign="top">
