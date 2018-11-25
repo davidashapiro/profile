@@ -224,7 +224,7 @@ textarea{height:50px;}
 	.formstatusok{color:#0C3;}	
 
 		.button {
-    		background-color: #008cba; /* blue */
+    		background-color: #FDB020; /* blue */
     		border: none;
     		color: white;
     		padding: 5px 15px;
@@ -250,7 +250,7 @@ textarea{height:50px;}
 			display: inline-block; 
 		}
 		#linksontop li a { 
-			color: #fff;
+			color: #000;
 			text-decoration: none;
 		}
 		.raisedname {
@@ -290,7 +290,31 @@ textarea{height:50px;}
 			-moz-opacity : 0.9;
 			opacity : 0.9;
 		}
-
+		#back2Top {
+				width: 40px;
+				line-height: 40px;
+				overflow: hidden;
+				z-index: 999;
+				display: none;
+				cursor: pointer;
+				-moz-transform: rotate(270deg);
+				-webkit-transform: rotate(270deg);
+				-o-transform: rotate(270deg);
+				-ms-transform: rotate(270deg);
+				transform: rotate(270deg);
+				position: fixed;
+				bottom: 60px;
+				right: 0;
+				background-color: #DDD;
+				color: #555;
+				text-align: center;
+				font-size: 30px;
+				text-decoration: none;
+		}
+		#back2Top:hover {
+				background-color: #DDF;
+				color: #000;
+		}
 		.myicons { margin:0; padding: 3; padding-right: 7; }
 		.myclass { font-size: 12pt; font-weight: bold; text-align: right; }
 		.fontclass { font-size: 11pt; color: black; }

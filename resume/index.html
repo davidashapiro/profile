@@ -11,8 +11,6 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	
-	<script src="js/myfunk.js" type="text/javascript"></script>
-	
 	<!-- //////// Css StyleSheets ////////  -->
 	<link href="css/print-style.css" rel="stylesheet" type="text/css" media="print" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,102 +21,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="css/screen-style.css" rel="stylesheet" type="text/css" />
+	<script src="js/scrolltop.js" type="text/javascript"></script>
 
-	<!-- //////// Cufon Font Replacement ////////  -->
-	<script src="js/cufon-yui.js" type="text/javascript"></script>
-	<script src="js/Aller.font.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		Cufon.replace('h1');
-		Cufon.replace('.item h2');
-		Cufon.replace('h2.cv-section-name');
-	</script>
-	
-	<!-- //////// Email Me Panel Animation ////////  -->
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(".emailme").click(function(){
-				$(".panel").toggle("fast");
-				$(this).toggleClass("active");
-				return false;
-			});
-		});
-	</script>
-	
-	<!-- //////// Contact Form ////////  -->
-	<script type="text/javascript">                                         
-	/* <![CDATA[ */
-		$(document).ready(function(){ // sends the data filled in the contact form to the php file and shows a message
-			$("#contact-form").submit(function(){
-				var str = $(this).serialize();
-				$.ajax({
-				   type: "POST",
-				   url: "send.php",
-				   data: str,
-				   success: function(msg)
-				   {
-						$("#formstatus").ajaxComplete(function(event, request, settings){
-							if(msg == 'OK'){ // Message Sent? Show the 'Thank You' message and hide the form
-								result = '<div class="formstatusok">Your message has been sent. Thank you!</div>';
-								$("#fields").hide();
-							}
-							else{
-								result = msg;
-							}
-							$(this).html(result);
-						});
-					}
-				 });
-				return false;
-			});
-		});
-	/* ]]> */	
-	</script>
-	<script>
-		function includeHTML() 
-		{
-			var z, i, elmnt, file, xhttp;
-			/*loop through a collection of all HTML elements:*/
-			z = document.getElementsByTagName("*");
-			for (i = 0; i < z.length; i++) 
-			{
-				elmnt = z[i];
-				/*search for elements with a certain atrribute:*/
-				file = elmnt.getAttribute("w3-include-html");
-				if (file) {
- 					/*make an HTTP request using the attribute value as the file name:*/
-					xhttp = new XMLHttpRequest();
-					xhttp.onreadystatechange = function() 
-					{
-						if (this.readyState == 4) 
-						{
-							if (this.status == 200) {
-								elmnt.innerHTML = this.responseText;
-							}
-							if (this.status == 404) {
-								elmnt.innerHTML = "Page not found.";
-							}
-							/*remove the attribute, and call this function once more:*/
-							elmnt.removeAttribute("w3-include-html");
-							includeHTML();
-						}
-					}      
-					xhttp.open("GET", file, true);
-					xhttp.send();
-					/*exit the function:*/
-					return;
-				}
-			}
-		};
-		
-		document.onreadystatechange = function () 
-		{
-            if (document.readyState === "complete") 
-            {
-                //document.getElementById("PreLoaderBar").style.display = "none";
-                document.getElementById("loader").style.display = "none";
-            }
-        }
-	</script>
 	<style>
 		.prgbar {
 			height: 20px;
@@ -127,7 +31,7 @@
 	</style>
 </head>
 <body>
-
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	<div id="loader"></div>
 	
 	<ul id='linksontop'>
@@ -157,7 +61,5 @@
 		includeHTML();
 	</script>
 	<!--<a class="emailme" href="#">Email Me</a>-->
-	<button onclick="scrollWindow1()" id="backtotop" title="Go to top">Top</button>
-	<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
