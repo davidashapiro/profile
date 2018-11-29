@@ -21,9 +21,9 @@
 											document.write("<table cellpadding='0' cellspacing='0' border='0'>");
 												document.write("<tr>");
 												document.write("<td align='center' valign='top'>"); 
-												document.write("<img src='/profile/images/logo.gif' border='0' alt=''><br>");
-												document.write("<div class='mycompany'>David Shapiro</div>");
-												document.write("<div align='center' class='slogan'>Speed, Relibility and Quality</div>");
+												document.write("<img src='/profile/images/mylogo.png' border='0' alt=''><br>");
+												document.write("<div class='mycompany'></div>");
+												document.write("<div align='center' class='slogan'></div>");
 												document.write("</td>");
 												document.write("</tr>");
 											document.write("</table>");
