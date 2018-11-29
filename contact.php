@@ -12,7 +12,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<script language='Javascript' type='text/javascript'>
-			var topmenu = 4;
+			var topmenu = 5;
 			var rightmenu = 0;
 		</script>
 		<style>
@@ -67,11 +67,27 @@
 			{
 				if (document.readyState === "complete") 
 				{
+					var modal = document.getElementById('myModal');
 					//document.getElementById("PreLoaderBar").style.display = "none";
-					document.getElementById("bigloader").style.display = "none";
+					document.getElementById("lds-roller").style.display = "none";
+					modal.style.display = "none";
 				}
 			}
 		</script>
+		<style>
+			.modal {
+			    display: block; 
+			    position: fixed; /* Stay in place */
+			    z-index: 1; /* Sit on top */
+			    left: 0;
+			    top: 0;
+			    width: 100%; /* Full width */
+			    height: 100%; /* Full height */
+			    overflow: auto; /* Enable scroll if needed */
+			    background-color: rgb(0,0,0); /* Fallback color */
+			    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+		</style>
 	</head>
 	<body>
 		<script language='JavaScript' type='text/javascript' src='scripts/header_part1.js'></script>
@@ -118,14 +134,25 @@
   		}
 	}
 
-	function test_input($data) {
+	function test_input($data) 
+	{
   		$data = trim($data);
   		$data = stripslashes($data);
   		$data = htmlspecialchars($data);
   		return $data;
 	}
 ?>
-			<div id="bigloader"></div>
+			<div id="myModal" class="modal"></div>
+			<div id="lds-roller" class="lds-roller">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 
 			<!--<div class="progress" id="PreLoaderBar">
 				<div class="indeterminate"></div>
@@ -143,12 +170,12 @@
         							<i class="fa fa-phone"></i> +1 949-444-2260
       							</li>
       							<li>
-      								<i class="fa fa-bank"></i>
+      								<i class="fa fa-map-marker"></i>
       								<a href="http://maps.google.com/maps?q=60090">Wheeling, IL, 60090</a>
       							</li>
       							<li>
       								<i class="fa fa-male"></i>
-      								<a href="resume/">My Online Resume</a>
+      								<a href="/resume/">My Online Resume</a>
       							</li>
 							</ul>
 						</div>
@@ -159,22 +186,21 @@
 							</iframe>
 						</div>
 					</td>
-            	</tr>
-            	<tr>
-            		<td colspan="2">
+				</tr>
+				<tr>
+					<td colspan="2">
 						<form method="post" id="contactmeform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
 							<fieldset>
 								<legend>Contact me</legend>
 								<hr class="colorgraph">
-                        		<input type="text" name="name" id="name" placeholder="* First and Last Name">
-                        		<span class="error">* <?php echo $nameErr;?>
+								<input type="text" name="name" id="name" placeholder="* First and Last Name">
+								<span class="error"><?php echo $nameErr;?>
 								<input type="text" name="email" id="email" placeholder="* Email">
-								<span class="error">* <?php echo $emailErr;?>
+								<span class="error"><?php echo $emailErr;?>
 								<textarea rows="8" name="comment" id="comment" placeholder="* Your comment here"></textarea>
 								<hr class="colorgraph">
-								<div style="width: 30%; "><a href="#" class="button" onclick="document.getElementById('contactmeform').submit();">
-									Send Message</a></div>
-								<span class="">The PHP mail() function is temporarily disabled on a server. in order to contact me please click on my email.
+								<div style="width: 30%; "><a href="#" class="btn btn-default btn-lg" onclick="document.getElementById('contactmeform').submit();">Send Message</a></div><br />
+								<span class="" style="color:black; ">The PHP mail() function is temporarily disabled on a server. in order to contact me please click on my email.
 								</span>
 							</fieldset>
 						</form>
