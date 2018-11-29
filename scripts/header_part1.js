@@ -1,9 +1,9 @@
-		document.write("<table cellpadding='0' cellspacing='0' border='0' width='100%' height='100%' background='images/main_bg.gif'>");
+		document.write("<table cellpadding='0' cellspacing='0' border='0' width='100%' height='100%' background='/profile/images/main_bg.gif'>");
 			document.write("<tr>");
 				document.write("<td>");
 					document.write("<table cellpadding='0' cellspacing='0' border='0' width='900' height='100%'>");
 						document.write("<tr height='261'>");
-							document.write("<td style='background:#f5f5f5 url(images/top7.jpg) top left round no-repeat; border-bottom:1px solid #eaeaea;'>");
+							document.write("<td style='background:#f5f5f5 url(/profile/images/top7.jpg) top left round no-repeat; border-bottom:1px solid #eaeaea;'>");
 								document.write(" <ul id='phoneontop'> ");
 									document.write(" <li><i class='fa fa-phone'></i><a href='#'> +1 949-444-2260</a></li> ");
 									document.write(" <li><i class='fa fa-envelope'></i><a href='mailto:d321973@mail.com'> d321973@mail.com</a></li> ");
@@ -21,7 +21,7 @@
 											document.write("<table cellpadding='0' cellspacing='0' border='0'>");
 												document.write("<tr>");
 												document.write("<td align='center' valign='top'>"); 
-												document.write("<img src='images/logo.gif' border='0' alt=''><br>");
+												document.write("<img src='/profile/images/logo.gif' border='0' alt=''><br>");
 												document.write("<div class='mycompany'>David Shapiro</div>");
 												document.write("<div align='center' class='slogan'>Speed, Relibility and Quality</div>");
 												document.write("</td>");

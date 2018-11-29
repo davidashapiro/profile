@@ -2,7 +2,7 @@
 												document.write("</tr>");
 												document.write("<tr>");
 													document.write("<td align='right'>");
-														document.write("<img src='images/2ndmenu_bottomholes.gif' width='50' height='71' border='0' alt=''>");
+														document.write("<img src='/profile/images/2ndmenu_bottomholes.gif' width='50' height='71' border='0' alt=''>");
 													document.write("</td>");
 												document.write("</tr>");
 											document.write("</table>");

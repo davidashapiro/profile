@@ -239,12 +239,14 @@ textarea{height:50px;}
 			list-style-type: none; 
 			position: fixed; 
 			top: 0px;
-			left: 5%; 
+			left: 0px; 
 			padding: 10px;
-			width: 90%;
+			width: 100%;
 			border: 1px solid #666;
 			text-align: center;
-			background: rgba(96, 96, 96, 0.5);
+			background: rgba(96, 96, 96, 0.2);
+			z-index: 99;
+			text-align: center;
 		}
 		#linksontop li { 
 			display: inline-block; 
@@ -847,4 +849,27 @@ textarea{height:50px;}
 			100% {
 				transform: rotate(360deg);
 			}
+		}
+		.prgbar {
+			height: 15px;
+			background: #aaa;
+		}
+		.modal {
+		    display: block; 
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		#intereststd{
+			font-weight: bold;
+			font-size: 20px;
+		}
+		table#interests img {
+			margin: 20px;
 		}

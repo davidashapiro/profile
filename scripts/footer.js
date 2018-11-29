@@ -38,11 +38,11 @@
 
 		document.write(" <div style='align: center; '> ");
 	      		document.write(" <ul id='footerLinks'> ");
-	      			document.write(" <li><a href='index.html'>About Me</a></li> ");
-				document.write(" <li><a href='csoon.html'>Blog</a></li> ");
-				document.write(" <li><a href='csoon.html'>FAQ</a></li> ");
-				document.write(" <li><a href='csoon.html'>Terms</a></li> ");
-				document.write(" <li><a href='csoon.html'>Privacy Policy</a></li> ");
+	      			document.write(" <li><a href='/profile/index.html'>About Me</a></li> ");
+				document.write(" <li><a href='/profile/csoon.html'>Blog</a></li> ");
+				document.write(" <li><a href='/profile/csoon.html'>FAQ</a></li> ");
+				document.write(" <li><a href='/profile/csoon.html'>Terms</a></li> ");
+				document.write(" <li><a href='/profile/csoon.html'>Privacy Policy</a></li> ");
 			document.write(" </ul> ");
 		document.write(" </div> ");
 
