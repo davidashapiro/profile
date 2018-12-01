@@ -194,13 +194,16 @@
 								<legend>Contact me</legend>
 								<hr class="colorgraph">
 								<input type="text" name="name" id="name" placeholder="* First and Last Name">
-								<span class="error"><?php echo $nameErr;?>
+								<?php if (!empty($nameErr)) {
+									echo '<span class=\'error\'>'.$nameErr.'</span>';
+								} ?>
 								<input type="text" name="email" id="email" placeholder="* Email">
-								<span class="error"><?php echo $emailErr;?>
+								<?php if (!empty($emailErr)) {
+									echo '<span class=\'error\'>'.$emailErr.'</span>';
+								} ?>
 								<textarea rows="8" name="comment" id="comment" placeholder="* Your comment here"></textarea>
 								<hr class="colorgraph">
 								<div style="width: 30%; "><a href="#" class="btn btn-default btn-lg" onclick="document.getElementById('contactmeform').submit();">Send Message</a></div><br />
-								<span class="" style="color:black; ">The PHP mail() function is temporarily disabled on a server. in order to contact me please click on my email.
 								</span>
 							</fieldset>
 						</form>
