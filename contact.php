@@ -1,19 +1,22 @@
 <html>
 	<head>
 		<title>David Shapiro - Contact</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-    	<link href='css/styles.css' rel='stylesheet' type='text/css'>
-		<!-- //////// Favicon ////////  -->
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<script language='Javascript' type='text/javascript'>
-			var topmenu = 5;
-			var rightmenu = 0;
+		<?php 
+   			include 'header0.php'; 
+			$topmenu = 6;
+			$rightmenu = 0;
+		?>
+		<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+		<script>
+          tinymce.init({
+              selector: "textarea",
+              plugins: [
+                  "advlist autolink lists link image charmap print preview anchor",
+                  "searchreplace visualblocks code fullscreen",
+                  "insertdatetime media table contextmenu paste"
+              ],
+              toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+          });
 		</script>
 		<style>
 			form input[type=text]{
@@ -29,31 +32,31 @@
 				width:100%;
 			}
 			form input[type=button], input[type=submit], input[type=reset] {
-    				background-color: #4CAF50;
-    				border: none;
-    				color: white;
-    				padding: 16px 32px;
-    				text-decoration: none;
-    				margin: 4px 2px;
-    				cursor: pointer;
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				padding: 16px 32px;
+				text-decoration: none;
+				margin: 4px 2px;
+				cursor: pointer;
 			}
 			.button {
-    				background-color: #eaeaea;
-    				border: none;
-    				color: white;
-    				padding: 15px 32px;
-    				text-align: center;
-    				text-decoration: none;
-    				display: inline-block;
-    				font-size: 16px;
-    				margin: 4px 2px;
-    				cursor: pointer;
-    				-webkit-transition-duration: 0.4s; /* Safari */
-    				transition-duration: 0.4s;
+				background-color: #eaeaea;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+				-webkit-transition-duration: 0.4s; /* Safari */
+				transition-duration: 0.4s;
 			}
 
 			.buttonShadow{
-    				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 			}
 			.buttonShadow:active {
   				background-color: #3e8e41;
@@ -90,10 +93,13 @@
 		</style>
 	</head>
 	<body>
-		<script language='JavaScript' type='text/javascript' src='scripts/header_part1.js'></script>
-		<script language='JavaScript' type='text/javascript' src='scripts/topmenu.js'></script>
-		<script language='JavaScript' type='text/javascript' src='scripts/header_part2.js'></script>
-		<script language='JavaScript' type='text/javascript' src='scripts/header_part3.js'></script>
+		<<?php 
+		include 'header1.php';
+		include 'topmenu.php';
+		include 'header2.php';
+		include 'header3.php';
+		?>
+		<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 		<span>
 <?php
 	// define variables and set to empty values
@@ -211,6 +217,9 @@
             	</tr>
             </table>
 		</span>
-		<script language='JavaScript' type='text/javascript' src='scripts/footer.js'></script>
+		<?php 
+			include 'footer.php';
+			include 'counter.php'; 
+		?>
 	</body>
 </html>

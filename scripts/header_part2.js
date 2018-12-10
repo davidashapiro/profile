@@ -8,7 +8,7 @@
 								document.write("<table cellpadding='0' cellspacing='0' border='0' width='100%' height='100%'>");
 									document.write("<tr>");
 										document.write("<td style='background:#fcfcfc url(/profile/images/2ndmenu_bgrpt.gif) top left repeat-x;' valign='top'>");
-											document.write("<div style='width:244px; height:0px;'>");
+											document.write("<div style='width:194px; height:0px;'>");
 												document.write("<spacer></spacer>");
 											document.write("</div>");
 											document.write("<table cellpadding='0' cellspacing='0' border='0' width='100%' height='100%'>");

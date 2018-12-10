@@ -99,7 +99,7 @@ td.thatext a { color:#666666; }
 				margin-bottom:0px;
 			}
 			.map iframe{
-				width:300px;
+				width:400px;
 				height:300px;
 				border:none;
 			}
@@ -110,7 +110,7 @@ td.thatext a { color:#666666; }
                 left:920px;
                 width: 50px;
                 border: none;
-    			background-color: #666666
+    			background-color: #666666;
     			padding: 14px 28px;
     			font-size: 16px;
     			cursor: pointer;
@@ -1825,7 +1825,6 @@ form.register-form .row {
 		}
 
 		#login {
-			border: 1px solid #AEAEAE;
 			margin: 100px auto 0;
 			padding: 0;
 			width: 300px;
@@ -1863,10 +1862,9 @@ form.register-form .row {
 		}
 
 		a#bloga {
-			color: #EF1F2F;
+			color: #0099cc;
 			text-decoration: none;
 		}
-@import url(http://fonts.googleapis.com/css?family=Raleway);
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -1964,3 +1962,4 @@ form.register-form .row {
   background: #47c9af;
 }
 
+			

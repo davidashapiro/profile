@@ -3,12 +3,14 @@ var topmenuurls = ['/profile/index.html',
 					'/profile/interests.html', 
 					'/profile/gallery1.html', 
 					'/simple-blog/index.php',
+					'/simple-forum/index.php',
 					'/profile/contact.php' ];
 var topmenulabels = ['Home', 
 					'Resume', 
 					'Interests', 
 					'Gallery', 
 					'Blog',
+					'Forum',
 					'Contact' ];
 
 document.write("<table cellpadding='0' cellspacing='0' border='0' style='border-collapse:collapse;'>");

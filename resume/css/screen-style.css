@@ -866,10 +866,16 @@ textarea{height:50px;}
 		    background-color: rgb(0,0,0); /* Fallback color */
 		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 		}
-		#intereststd{
-			font-weight: bold;
-			font-size: 20px;
+		ul#images img {
+			margin-bottom: 20px;
 		}
-		table#interests img {
-			margin: 20px;
+		ul#images {
+			display: inline-block;
+			list-style: none;
+			font-size: 16px;
+			color: black;
 		}
+		ul#images li {
+			list-style: none;
+		}
+		

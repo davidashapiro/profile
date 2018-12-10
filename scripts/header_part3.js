@@ -25,4 +25,4 @@
 																document.write("<td valign='top' style='border:1px solid #cccccc; padding:20px;' bgcolor='#ffffff' class='thatext'>");
 																	document.write("<table>");
 																		document.write("<tr>");
-																			document.write("<td valign='top' width='575' bgcolor='#ffffff' class='thatext'>");
+																			document.write("<td valign='top' width='685' bgcolor='#ffffff' class='thatext'>");
