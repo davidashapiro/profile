@@ -188,7 +188,7 @@
 					</td>
 					<td>
 						<div class="map">
-							<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=230+old+oak+dr+Buffalo+Grove+60089&amp;output=embed">
+							<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1602+Newburn+Ct+Wheeling+60090&amp;output=embed">
 							</iframe>
 						</div>
 					</td>
@@ -219,7 +219,6 @@
 		</span>
 		<?php 
 			include 'footer.php';
-			include 'counter.php'; 
 		?>
 	</body>
 </html>

@@ -1,17 +1,13 @@
 <?php
-$topmenuurls = array(	'/profile/index.php', 
-						'/profile/resume.php', 
-						'/profile/interests.php', 
-						'/profile/gallery1.php', 
-						'/simple-blog/index.php',
-						'/simple-forum/index.php',
-						'/profile/contact.php' );
+$topmenuurls = array(	'/index.php', 
+						'/resume.php', 
+						'/interests.php', 
+						'/gallery1.php', 
+						'/contact.php' );
 $topmenulabels = array( 'Home', 
 						'Resume', 
 						'Interests', 
 						'Gallery', 
-						'Blog',
-						'Forum',
 						'Contact' );
 ?>
 

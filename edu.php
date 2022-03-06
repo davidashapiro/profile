@@ -33,7 +33,6 @@
 		</span>
 		<?php 
 			include 'footer.php';
-			include 'counter.php'; 
 		?>
 	</body>
 </html>

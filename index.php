@@ -1,5 +1,5 @@
 <html>
-	<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=WINDOWS-1252">
 		<title>David Shapiro - Profile</title>
    		
    		<?php 
@@ -29,8 +29,8 @@
 		<span>
 			<h2>
 				<div id="myportret">
-					<a data-fancybox="gallery" href="gallery/D1.jpg">
-						<img width="100" height="130" src="gallery/D1.jpg">
+					<a data-fancybox="gallery" href="/gallery/David21.jpg">
+						<img width="100" height="130" src="/gallery/David21.jpg">
 					</a>
 				</div>
 				<table id="socialstatus" style="float: right; ">
@@ -40,7 +40,7 @@
   					</tr>
   					<tr>
     						<td>Age</td>
-    						<td>45</td>
+    						<td>49</td>
   					</tr>
   					<tr>
     						<td>Birthday</td>
@@ -52,7 +52,7 @@
   					</tr>
   					<tr>
     						<td>weight</td>
-    						<td>280 lb</td>
+    						<td>300 lb</td>
   					</tr>
   					<tr>
     						<td>Height</td>
@@ -228,7 +228,6 @@
 		</span>
 		<?php 
 			include 'footer.php';
-			include 'counter.php'; 
 		?>
 	</body>
 </html>

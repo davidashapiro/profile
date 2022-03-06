@@ -43,7 +43,6 @@
 	<div style='align: center; '> 
 		<ul id='footerLinks'> 
 			<li><a href='index.php'>About Me</a></li> 
-			<li><a href='/simple-blog/index.php'>Blog</a></li> 
 			<li><a href='faq.php'>FAQ</a></li> 
 			<li><a href='terms.php'>Terms</a></li> 
 			<li><a href='policy.php'>Privacy Policy</a></li> 
@@ -53,7 +52,7 @@
 		<div class='row'> 
 			<div class='col-twelve'> 
 				<div class='copyright'> 
-					<span>&copy; Copyright 2018</span> 
+					<span>&copy; Copyright 2022</span> 
 					<span>Design by David Shapiro</span> 
 				</div> 
 			</div> 
