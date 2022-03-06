@@ -14,12 +14,12 @@ input, select, textarea { font-family:Tahoma,Arial; font-size:8pt; }
 /* top */
 
 td.menu-g { border-left:1px solid #cccccc; border-top:1px solid #cccccc; border-right:1px solid #cccccc; }
-table.menuitem1 { width:98px; background:#01679a url(/profile/images/menu_item.gif) top left repeat-x; }
-table.menuitem1active { width:98px; background:#cdcdcd url(/profile/images/menu_active.gif) top left repeat-x; }
-table.menuitem2 { width:100px; background:#01679a url(/profile/images/menu_item.gif) top left repeat-x; }
-table.menuitem2active { width:100px; background:#cdcdcd url(/profile/images/menu_active.gif) top left repeat-x; }
-table.menuitem3 { width:100px; border-left:1px solid #ffffff; border-top:1px solid #ffffff; border-right:1px solid #ffffff; background:#01679a url(/profile/images/menu_item.gif) top left repeat-x; }
-table.menuitem3active { width:100px; border-left:1px solid #ffffff; border-top:1px solid #ffffff; border-right:1px solid #ffffff; background:#cdcdcd url(/profile/images/menu_active.gif) top left repeat-x; }
+table.menuitem1 { width:98px; background:#01679a url(../images/menu_item.gif) top left repeat-x; }
+table.menuitem1active { width:98px; background:#cdcdcd url(../images/menu_active.gif) top left repeat-x; }
+table.menuitem2 { width:100px; background:#01679a url(../images/menu_item.gif) top left repeat-x; }
+table.menuitem2active { width:100px; background:#cdcdcd url(../images/menu_active.gif) top left repeat-x; }
+table.menuitem3 { width:100px; border-left:1px solid #ffffff; border-top:1px solid #ffffff; border-right:1px solid #ffffff; background:#01679a url(../images/menu_item.gif) top left repeat-x; }
+table.menuitem3active { width:100px; border-left:1px solid #ffffff; border-top:1px solid #ffffff; border-right:1px solid #ffffff; background:#cdcdcd url(../images/menu_active.gif) top left repeat-x; }
 
 td.menuitem1 { width:100%; height:26px; color:#ffffff; white-space:nowrap; font-weight:bold; text-align:center; padding: 0px; font-family:tahoma,arial; font-size:8pt; }
 td.menuitem1active { width:100%; height:26px; color:#3399cc; white-space:nowrap; font-weight:bold; text-align:center; padding: 0px; font-family:tahoma,arial; font-size:8pt; }
@@ -34,8 +34,8 @@ td.menuitemactive a { text-decoration:none; font-weight:bold; color:#3399cc; }
 div.mycompany { font-family:myriadpro, arial; font-size:20pt; color:#3399CC; margin-top:10px; }
 div.slogan { font-family:myriadpro, arial; font-size:8pt; color:#7f7f7f; margin-top:-2px; padding-left:2px; }
 
-table.secondmenuitem { border:1px solid #ffffff; background:#ffffff url(/profile/images/2ndmenu_item.gif) top left repeat-x; }
-table.secondmenuitemactive { border:1px solid #ffffff; background:#cdcdcd url(/profile/images/2ndmenu_active.gif) top left repeat-x; }
+table.secondmenuitem { border:1px solid #ffffff; background:#ffffff url(../images/2ndmenu_item.gif) top left repeat-x; }
+table.secondmenuitemactive { border:1px solid #ffffff; background:#cdcdcd url(../images/2ndmenu_active.gif) top left repeat-x; }
 td.secondmenuitem { 
 	width:100%; 
 	color:#3399cc; 
@@ -72,10 +72,10 @@ img.secondmenumark { margin:0px 7px 0px 0px; }
 td.copy { vertical-align:top; padding:17px 0px 0px 265px; font-family:tahoma,arial; font-size:10pt; color:#666666; }
 a.copy { font-size:10pt; color:#3399cc; }
 
-td.text-bg { background:#99cccc url(/profile/images/text_colorbg.gif) top left repeat-x; }
+td.text-bg { background:#99cccc url(../images/text_colorbg.gif) top left repeat-x; }
 div.text-bg-color { height:2px; width:2px; background-color:#99cccc; }
 
-table.text-header { border:1px solid #ffffff; background:#ffffff url(/profile/images/text_header.gif) top left repeat-x; }
+table.text-header { border:1px solid #ffffff; background:#ffffff url(../images/text_header.gif) top left repeat-x; }
 td.text-header { color:#333333; height:26px; padding-left:20px; font-weight:bold; font-family:tahoma,arial; font-size:8pt; }
 td.thatext { font-family:tahoma, arial; font-size:10pt; color:#666666; }
 td.thatext a { color:#666666; }
