@@ -29,8 +29,8 @@
 		<span>
 			<h2>
 				<div id="myportret">
-					<a data-fancybox="gallery" href="/gallery/David21.jpg">
-						<img width="100" height="130" src="/gallery/David21.jpg">
+					<a data-fancybox="gallery" href="/gallery/David2003.jpg">
+						<img width="100" height="130" src="/gallery/David2003.jpg">
 					</a>
 				</div>
 				<table id="socialstatus" style="float: right; ">
@@ -40,7 +40,7 @@
   					</tr>
   					<tr>
     						<td>Age</td>
-    						<td>49</td>
+    						<td>50</td>
   					</tr>
   					<tr>
     						<td>Birthday</td>
@@ -52,7 +52,7 @@
   					</tr>
   					<tr>
     						<td>weight</td>
-    						<td>300 lb</td>
+    						<td>322 lb</td>
   					</tr>
   					<tr>
     						<td>Height</td>
@@ -94,7 +94,7 @@
 					</tr>
 					<tr>
     						<td>Sexual orientation</td>
-    						<td>Heterosexual. Only interested in woman</td>
+    						<td>Heterosexual </td>
 					</tr>
 					<tr>
     						<td>Education</td>
@@ -215,7 +215,11 @@
 					</tr>
 					<tr>
 						<td>
-							<p> Since the young age I have always been into cross dressing. That was also my biggest secret because I grew up in the environment where such things were unacceptable. I was also afraid of rejection if person I am with would find out my secret. Every time I've started a relationship the thought of her finding out and rejecting me was pushing me into state where I wasn't honest with her. She felt that I am hiding something and slowly things start to break also because I was not completely with her but in my own closet. I met few good women, but always the relationship ended in few month or weeks all because I've been hiding in my closet. In 2009 I've decided to be honest with new woman and tell her my secret... surprisingly it went a lot better then I expected and she was fine with my desires for cross dressing. Everything went good and in 3 months she became pregnant and we were happy about it. 3 months into the pregnancy she suddenly decides that she is not fine with my cross dressing and left me. I was begging her to come back but it was all for nothing. I became so angry that I decided that since this desire is causing me so much trouble all my life I must go out of the closet and try to live openly as a woman... I thought that since I love to wear women’s clothes I must be a woman inside trapped in the mans body. In 2011 I openly went to work dressed as a woman. With help of some psychologists of course. 5 years I lived as a woman, taking hormones, but being alone since I made it in my mind that nobody would be friends with or date somebody like me. Finally I came to realize that I am not a woman, I am male to the bone. It's just a cross dressing nothing more. Since I've been in isolation for so long it's difficult to get back on track with depression in my head. But I will continue to fight through this depression and go back to be able to live full life. 
+							<p> Since the young age I have always been into cross-dressing. That was also my biggest secret because I grew up in the environment where such things were unacceptable. I was also afraid of rejection if the person I am with would find out my secret. Every time I've started a relationship (I've been married twice) the thought of her finding out and rejecting me was pushing me into a state where I wasn't honest with her. She felt that I am hiding something and slowly things start to break also because I was not completely with her but in my own closet. I met few good women, but always the relationship ended in few month or weeks, all because I've been hiding in my closet. In 2009, I've decided to be honest with new women and tell her my secret... surprisingly it went a lot better than I expected, and she was fine with my desires for cross-dressing. Everything went well and in 3 months she became pregnant, and we were happy about it. 3 months into the pregnancy, she suddenly decides that she is not fine with my cross-dressing and left me. I was begging her to come back, but it was all for nothing. I became so angry that I decided that since this desire is causing me so much trouble all my life, I must go out of the closet and try to live openly as a woman... I thought that since I love to wear women’s clothes, I must be a woman inside trapped in the men body.</p> 
+							
+							<p> In 2011, I openly went to work dressed as a woman. With help of some psychologists of course. 5 years I lived as a woman, taking hormones, but being alone since I made it in my mind that nobody would be friends with or date somebody like me. Finally, I came to realize that I am not a woman, I am male to the bone. It's just a cross-dressing, nothing more. Since I've been in isolation for so long, it's difficult to get back on track with depression in my head. But I will continue to fight through this depression and go back to be able to live a full life. </p>
+							
+							<p>Since 2016 I went to multiple research studies that studies drugs and other ways to help treat a depression. The last one is called the VNC Implant. It's actually implanting that implant under your collarbone and very thin wire wrapped around the vagus nerve in the neck. It vibrates every 5 minutes and stimulates the vagus nerve. Furthermore, it supposes to help brain fight depression. It seems it's working for me. I started studying the skills I lost through years of depression, being completely isolates and out of work.</p>
 						</td>
 					</tr>
 					<tr>
