@@ -5,9 +5,9 @@
 					<tr height='261'>
 						<td style='background:#f5f5f5 url(images/top7.jpg) top left round no-repeat; border-bottom:1px solid #eaeaea;'>
 							<ul id='phoneontop'> 
-								<li><i class='fa fa-phone'></i><a href='#'> +1 949-444-2260</a></li>
+								<li><i class='fa fa-phone'></i> +1 847-909-9048</li>
 								<li><i class='fa fa-envelope'></i>
-									<a href='mailto:d321973@mail.com'> d321973@mail.com</a>
+									<a href='mailto:d321973@gmail.com'> d321973@gmail.com</a>
 								</li>
 								<li style="float:right;">
 									<a target='_blank' href='https://twitter.com/DimaShapiro' class='fa fa-twitter' style='color: #ffffff'></a> 
